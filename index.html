@@ -5,73 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary SEO Meta Tags -->
-    <title>Joy Is God – Eternal Hope, Peace & Salvation in Jesus Christ</title>
-    <meta name="description" content="Discover true, unshakeable joy and eternal salvation through Jesus Christ. Bible promises, prayers, and hope available in English, Español, Français, 中文, العربية, हिन्दी, and more.">
-    
-    <!-- Search Engine Indexing & Sitemap Link -->
-    <meta name="robots" content="index, follow">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-    
-    <!-- Web App Manifest & PWA Meta Tags -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0d1b2a">
-    <link rel="apple-touch-icon" href="/icon-192.png">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Joy Is God - Finding Hope, Peace, Strength & Salvation in Jesus Christ</title>
+    <meta name="description" content="Discover true, lasting joy and peace through faith in Jesus Christ. Explore Bible verses for anxiety, hope, strength, and eternal salvation. Available in English, Español, Français, and 中文.">
+    <meta name="keywords" content="Joy Is God, Bible verses for hope, peace in Jesus Christ, salvation prayer, Christian faith, Bible verses for strength, how to accept Jesus">
+    <link rel="canonical" href="https://www.joyisgod.com/">
 
-    <!-- Typography & Styles -->
+    <!-- Hreflang Tags for Global SEO -->
+    <link rel="alternate" hreflang="en" href="https://www.joyisgod.com/?lang=en" />
+    <link rel="alternate" hreflang="es" href="https://www.joyisgod.com/?lang=es" />
+    <link rel="alternate" hreflang="fr" href="https://www.joyisgod.com/?lang=fr" />
+    <link rel="alternate" hreflang="zh" href="https://www.joyisgod.com/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://www.joyisgod.com/" />
+
+    <!-- Open Graph / Facebook / WhatsApp Preview Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.joyisgod.com/">
+    <meta property="og:title" content="Joy Is God - Eternal Hope, Peace & Salvation">
+    <meta property="og:description" content="Discover unshakeable peace and eternal joy through a relationship with God and Jesus Christ.">
+    <meta property="og:site_name" content="Joy Is God">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.joyisgod.com/">
+    <meta name="twitter:title" content="Joy Is God - Hope, Peace & Salvation in Jesus Christ">
+    <meta name="twitter:description" content="Find encouragement, scripture, and salvation through faith in Jesus Christ.">
+
+    <!-- JSON-LD Structured Data for Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Joy Is God",
+      "url": "https://www.joyisgod.com/",
+      "description": "An international platform dedicated to sharing hope, biblical truth, and salvation in Jesus Christ.",
+      "inLanguage": ["en", "es", "fr", "zh"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Who is Jesus Christ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jesus Christ is the Son of God, fully divine and fully human, who came to earth to offer forgiveness, salvation, and eternal life to all who believe in Him."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can I accept Jesus Christ as my Savior?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can accept Jesus by acknowledging your need for God, believing that Jesus died on the cross for your sins and rose again, and confessing Him as your Lord through prayer."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-gradient: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #1e293b 100%);
-            --accent-gold: #d97706;
-            --accent-gold-light: #fef3c7;
-            --card-bg: #ffffff;
-            --card-border: #e2e8f0;
-            --text-heading: #0f172a;
-            --text-body: #334155;
-            --accent-green: #059669;
-            --accent-blue: #2563eb;
+            --bg-dark: #0a0910;
+            --accent-gold: #f3c669;
+            --accent-glow: rgba(243, 198, 105, 0.25);
+            --text-main: #f0eef5;
+            --text-muted: #a19db3;
+            --card-bg: rgba(255, 255, 255, 0.04);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --accent-green: #34d399;
+            --accent-blue: #60a5fa;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
         body {
-            font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.8;
-            color: var(--text-body);
-            background: var(--bg-gradient);
-            background-attachment: fixed;
+            color: var(--text-main);
+            background-color: var(--bg-dark);
             min-height: 100vh;
             overflow-x: hidden;
+            position: relative;
+        }
+
+        .ambient-light {
+            position: fixed;
+            top: -15%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 850px;
+            height: 850px;
+            background: radial-gradient(circle, rgba(243, 198, 105, 0.12) 0%, rgba(59, 130, 246, 0.08) 45%, rgba(0,0,0,0) 70%);
+            filter: blur(90px);
+            z-index: -1;
+            animation: pulseGlow 12s ease-in-out infinite alternate;
+            pointer-events: none;
+        }
+
+        @keyframes pulseGlow {
+            0% { transform: translateX(-50%) scale(0.85); opacity: 0.6; }
+            100% { transform: translateX(-50%) scale(1.1); opacity: 1; }
         }
 
         nav {
-            background: rgba(13, 27, 42, 0.9);
+            background: rgba(10, 9, 16, 0.7);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--card-border);
             position: sticky;
             top: 0;
             z-index: 100;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.85rem 1.25rem;
+            padding: 0.85rem 2rem;
             flex-wrap: wrap;
-            gap: 0.75rem;
+            gap: 1rem;
         }
 
-        .nav-left { display: flex; align-items: center; gap: 1rem; }
-        .nav-right { display: flex; align-items: center; gap: 0.75rem; }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
 
         .logo {
             font-family: 'Cinzel', serif;
             font-weight: 700;
-            font-size: 1.25rem;
-            color: #fbbf24;
+            font-size: 1.3rem;
+            color: var(--accent-gold);
             text-decoration: none;
             letter-spacing: 0.05em;
         }
@@ -80,176 +151,573 @@
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.3rem 0.75rem;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 0.35rem 0.85rem;
             border-radius: 20px;
             font-size: 0.85rem;
-            color: #e2e8f0;
+            color: var(--text-muted);
             font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid var(--card-border);
         }
-        .visitor-counter span { color: #fbbf24; font-weight: 700; }
+
+        .visitor-counter span {
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
 
         .lang-selector select {
             padding: 0.45rem 0.85rem;
             border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background-color: #1e293b;
-            color: #f8fafc;
+            border: 1px solid var(--card-border);
+            background-color: rgba(20, 18, 30, 0.9);
+            color: var(--text-main);
             font-size: 0.9rem;
             cursor: pointer;
             outline: none;
         }
 
-        #installAppBtn {
-            display: none; 
-            background: var(--accent-gold);
-            color: #fff;
-            border: none;
-            padding: 0.45rem 0.85rem;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: background 0.2s;
+        header {
+            text-align: center;
+            padding: 4.5rem 1.5rem 3rem 1.5rem;
         }
-        #installAppBtn:hover { background: #b45309; }
 
-        header { text-align: center; padding: 3.5rem 1.25rem 2rem 1.25rem; }
         header h1 {
             font-family: 'Cinzel', serif;
-            font-size: clamp(2.3rem, 6vw, 3.8rem);
+            font-size: clamp(2.5rem, 6vw, 4rem);
             font-weight: 700;
-            background: linear-gradient(135deg, #ffffff 40%, #fbbf24 100%);
+            letter-spacing: 0.06em;
+            background: linear-gradient(135deg, #ffffff 30%, var(--accent-gold) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            text-shadow: 0 0 35px var(--accent-glow);
         }
-        header p { font-size: 1.15rem; color: #cbd5e1; font-weight: 400; }
 
-        main { max-width: 850px; margin: 0 auto 3rem auto; padding: 0 1.25rem; }
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 300;
+            letter-spacing: 0.03em;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 0 auto 3rem auto;
+            padding: 0 1.5rem;
+        }
 
         .content-card {
             background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--card-border);
             border-radius: 18px;
-            padding: 2rem;
-            margin-bottom: 1.75rem;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        h2 { font-family: 'Cinzel', serif; font-size: 1.55rem; color: var(--accent-gold); border-bottom: 2px solid #fef3c7; padding-bottom: 0.65rem; margin-bottom: 1.25rem; }
-        p { color: var(--text-body); font-size: 1.025rem; margin-bottom: 1.25rem; }
-        ul { padding-left: 1.4rem; color: var(--text-body); margin-bottom: 1.25rem; }
-        li { margin-bottom: 0.75rem; }
+        .content-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(243, 198, 105, 0.3);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+        }
 
-        .salvation-section { border-left: 5px solid var(--accent-green); background: #f0fdf4; }
-        .prayer-box { background: #ffffff; border: 2px dashed #059669; padding: 1.5rem; border-radius: 12px; font-style: italic; margin: 1.5rem 0; color: #064e3b; }
-        .verse-box { background: var(--accent-gold-light); border-left: 4px solid var(--accent-gold); padding: 1.15rem 1.35rem; border-radius: 0 10px 10px 0; margin: 1.35rem 0; font-style: italic; color: #78350f; font-weight: 500; }
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            color: var(--accent-gold);
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
 
-        footer { text-align: center; padding: 2.5rem 1rem; color: #94a3b8; font-size: 0.85rem; border-top: 1px solid rgba(255, 255, 255, 0.1); background: #0b1320; }
+        h3 {
+            font-family: 'Cinzel', serif;
+            color: #ffffff;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            color: #d1cde0;
+            font-size: 1.05rem;
+            margin-bottom: 1.25rem;
+        }
+
+        ul {
+            padding-left: 1.4rem;
+            color: #d1cde0;
+            margin-bottom: 1.25rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        .salvation-section {
+            border-left: 4px solid var(--accent-green);
+            background: rgba(52, 211, 153, 0.03);
+        }
         
-        .lang-content { display: none; }
-        .lang-content.active { display: block; }
+        .theology-section {
+            border-top: 4px solid var(--accent-blue);
+        }
+
+        .prayer-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(52, 211, 153, 0.3);
+            padding: 1.75rem;
+            border-radius: 12px;
+            font-style: italic;
+            margin: 1.5rem 0;
+            color: #f0eef5;
+            box-shadow: inset 0 0 15px rgba(52, 211, 153, 0.05);
+        }
+
+        .verse-box {
+            background: rgba(243, 198, 105, 0.05);
+            border-left: 3px solid var(--accent-gold);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #fff;
+        }
+        
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .share-card {
+            background: rgba(255, 255, 255, 0.02);
+            text-align: center;
+        }
+
+        .share-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.65rem 1.25rem;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+        }
+
+        .btn-facebook { background-color: #1877f2; }
+        .btn-twitter { background-color: #2b2b2b; border: 1px solid #444; }
+        .btn-whatsapp { background-color: #25d366; }
+        .btn-telegram { background-color: #229ed9; }
+        .btn-reddit { background-color: #ff4500; }
+        .btn-pinterest { background-color: #e60023; }
+        .btn-email { background-color: #4b5563; }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
+            background: rgba(10, 9, 16, 0.9);
+        }
+
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .grid-layout { grid-template-columns: 1fr; }
+        }
+        
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            .content-card { padding: 1.5rem; }
+            nav { padding: 0.75rem 1rem; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- Top Navigation Bar -->
+    <div class="ambient-light"></div>
+
+    <!-- Navigation & Language Selector Bar -->
     <nav>
         <div class="nav-left">
             <a href="#" class="logo">Joy Is God</a>
-            <div class="visitor-counter" title="Global Visitors">
-                🌐 Visits: <span id="visitorCount">226</span>
+            <div class="visitor-counter" title="Total Website Visits">
+                👁️ Visitors: <span id="visitorCount">226</span>
             </div>
         </div>
         <div class="nav-right">
-            <button id="installAppBtn">📲 Install App</button>
             <div class="lang-selector">
+                <label for="languageSelect" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-right: 0.3rem;">🌐</label>
                 <select id="languageSelect" onchange="changeLanguage(this.value)">
                     <option value="en" selected>English</option>
                     <option value="es">Español</option>
                     <option value="fr">Français</option>
+                    <option value="zh">中文</option>
                 </select>
             </div>
         </div>
     </nav>
 
+    <!-- Header Section -->
     <header>
         <h1>JOY IS GOD</h1>
-        <p>Bringing the Good News of Jesus Christ to Every Heart and Nation.</p>
+        <p>Anchoring your heart in His eternal hope, grace, and truth.</p>
     </header>
 
     <main>
-        <!-- ENGLISH CONTENT -->
+        <!-- ================= ENGLISH ================= -->
         <div id="content-en" class="lang-content active">
-            
             <section class="content-card">
-                <h2>📖 Verse of the Day</h2>
-                <div id="daily-verse-container" class="verse-box" style="border-left-color: var(--accent-blue); background: #eff6ff;">
-                    <!-- Verse injected by JS -->
+                <h2>Welcome to Joy Is God</h2>
+                <p>True joy is not a temporary feeling tied to shifting circumstances—it is a steadfast, unshakeable gift rooted in the character of God and realized through a personal relationship with Jesus Christ. No matter where you are on your spiritual journey, you are welcome here.</p>
+                <div class="verse-box">
+                    "May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit." <br><strong>— Romans 15:13</strong>
+                </div>
+            </section>
+
+            <!-- Expanded Scripture Topics for SEO Traffic -->
+            <section class="content-card">
+                <h2>Promises of Hope, Peace & Strength</h2>
+                <p>Explore timeless biblical truths that offer comfort during life's trials and deepen your connection with God:</p>
+                <div class="verse-box">
+                    "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid." <br><strong>— John 14:27</strong>
+                </div>
+                <div class="verse-box">
+                    "Do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand." <br><strong>— Isaiah 41:10</strong>
+                </div>
+                <div class="verse-box">
+                    "Cast all your anxiety on him because he cares for you." <br><strong>— 1 Peter 5:7</strong>
+                </div>
+            </section>
+
+            <section class="content-card theology-section">
+                <h2>Who is Jesus Christ?</h2>
+                <p>Jesus is the central figure of human history and the foundation of the Christian faith. He is not merely a prophet or a good teacher; the Bible reveals Him as the Son of God, fully divine and fully human.</p>
+                <div class="grid-layout">
+                    <div>
+                        <h3>He is the Savior</h3>
+                        <p>Jesus came to earth with a specific mission: to seek and to save the lost. He willingly took the punishment for our sins upon Himself on the cross, offering us forgiveness and a pathway back to God.</p>
+                    </div>
+                    <div>
+                        <h3>He Conquered Death</h3>
+                        <p>The grave could not hold Him. Three days after His crucifixion, Jesus rose from the dead, proving His power over sin and death and offering eternal life to all who believe in Him.</p>
+                    </div>
+                </div>
+                <div class="verse-box">
+                    "Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'" <br><strong>— John 14:6</strong>
                 </div>
             </section>
 
             <section class="content-card">
-                <h2>God's Love for You</h2>
-                <p>No matter where you live, what language you speak, or what your past looks like, God created you with purpose and deeply loves you. Real, unshakeable peace is found in a personal relationship with Him through Jesus Christ.</p>
-                <div class="verse-box">
-                    "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life." <br><strong>— John 3:16</strong>
+                <h2>The Character of God</h2>
+                <p>To find true joy, we must know the One who gives it. The Bible teaches us several foundational truths about who God is:</p>
+                <ul>
+                    <li><strong>God is Love:</strong> His love for you is unconditional and eternal. It does not depend on your performance, but on His perfect nature. (1 John 4:8)</li>
+                    <li><strong>God is Faithful:</strong> Even when circumstances change, God remains constant. His promises are trustworthy, and He will never abandon those who seek Him. (Lamentations 3:22-23)</li>
+                    <li><strong>God is Holy & Just:</strong> He is completely pure and righteous. Because He is just, He must judge sin, but because He is loving, He provided a substitute in Jesus Christ.</li>
+                </ul>
+            </section>
+
+            <section class="content-card salvation-section">
+                <h2>How to Accept Jesus Christ as Your Savior</h2>
+                <p>God loves you deeply and desires a close, personal relationship with you. Because of human imperfection, we are separated from God, but His immense love bridged that gap through His Son, Jesus Christ. Here are the simple steps to receiving His free gift of eternal life:</p>
+                <ul>
+                   <li><strong>Acknowledge your need:</strong> Recognize that we all fall short and need God's forgiveness (Romans 3:23).</li>
+                   <li><strong>Believe in Jesus:</strong> Understand that Jesus died on the cross for your sins and rose triumphantly from the dead (John 3:16).</li>
+                   <li><strong>Confess and Turn:</strong> Turn away from past burdens and invite Jesus to lead your life as Lord and Savior (Romans 10:9).</li>
+                </ul>
+                <p>If you are ready to place your trust in Him, you can make this commitment right now with a sincere heart:</p>
+                <div class="prayer-box">
+                    "Dear God, I know that I am a sinner, and I ask for your forgiveness. I believe that Jesus Christ died for my sins, was raised from the dead, and is alive today. I invite Jesus to come into my heart and take control of my life. Thank you for your grace, your gift of eternal salvation, and your unending joy. In Jesus' name, Amen."
+                </div>
+                <p>If you prayed that prayer sincerely, the Bible says heaven is rejoicing over you! Welcome to the family of God.</p>
+            </section>
+
+            <section class="content-card">
+                <h2>Growing in Your Faith</h2>
+                <p>Accepting Jesus is just the beginning of a beautiful journey. Here is how you can continue to grow in your walk with God:</p>
+                <ul>
+                    <li><strong>Read the Bible:</strong> The Bible is God's living Word. Start by reading the Book of John in the New Testament to learn more about the life and teachings of Jesus.</li>
+                    <li><strong>Talk to God through Prayer:</strong> Prayer is simply having a conversation with God. You can talk to Him about your worries, your thanks, and your daily life at any time.</li>
+                    <li><strong>Find Community:</strong> Look for a local, Bible-believing church where you can worship, learn, and grow alongside other believers.</li>
+                </ul>
+            </section>
+
+            <!-- Social Media Share Card -->
+            <section class="content-card share-card">
+                <h2>Spread the Good News</h2>
+                <p>Help amplify God's message of love, hope, and salvation. Share this page instantly with your friends, family, and followers on social media:</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" class="share-btn btn-facebook">📘 Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=Discover%20true%20hope,%20joy,%20and%20salvation%20in%20Jesus%20Christ%20at&url=https://www.joyisgod.com" target="_blank" class="share-btn btn-twitter">✖ X (Twitter)</a>
+                    <a href="https://api.whatsapp.com/send?text=Discover%20hope%20and%20salvation%20at%20https://www.joyisgod.com" target="_blank" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                    <a href="https://t.me/share/url?url=https://www.joyisgod.com&text=Find%20peace%20and%20eternal%20joy%20in%20Jesus%20Christ" target="_blank" class="share-btn btn-telegram">✈ Telegram</a>
+                    <a href="https://www.reddit.com/submit?url=https://www.joyisgod.com&title=Joy%20Is%20God%20-%20Finding%20Hope%20and%20Salvation" target="_blank" class="share-btn btn-reddit">🔴 Reddit</a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://www.joyisgod.com&description=Find%20eternal%20hope%20and%20salvation%20in%20Jesus%20Christ" target="_blank" class="share-btn btn-pinterest">📌 Pinterest</a>
+                    <a href="mailto:?subject=A%20Message%20of%20Hope%20and%20Joy&body=I%20thought%20you%20might%20be%20encouraged%20by%20this%20website:%20https://www.joyisgod.com" class="share-btn btn-email">✉ Email</a>
                 </div>
             </section>
         </div>
 
-        <!-- SPANISH CONTENT -->
+        <!-- ================= SPANISH (ESPAÑOL) ================= -->
         <div id="content-es" class="lang-content">
             <section class="content-card">
-                <h2>El Amor de Dios para Ti</h2>
-                <p>No importa dónde vivas o tu pasado, Dios te creó con un propósito y te ama profundamente.</p>
+                <h2>Bienvenido a Joy Is God</h2>
+                <p>El verdadero gozo no es un sentimiento temporal ligado a circunstancias cambiantes; es un regalo firme e inquebrantable arraigado en el carácter de Dios y realizado a través de una relación personal con Jesucristo.</p>
                 <div class="verse-box">
-                    "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito..." <br><strong>— Juan 3:16</strong>
+                    "Y el Dios de esperanza os llene de todo gozo y paz en el creer..." <br><strong>— Romanos 15:13</strong>
+                </div>
+            </section>
+
+            <section class="content-card">
+                <h2>Promesas de Esperanza y Paz</h2>
+                <div class="verse-box">
+                    "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo." <br><strong>— Juan 14:27</strong>
+                </div>
+                <div class="verse-box">
+                    "No temas, porque yo estoy contigo; no desmayes, porque yo soy tu Dios que te esfuerzo..." <br><strong>— Isaías 41:10</strong>
+                </div>
+            </section>
+
+            <section class="content-card theology-section">
+                <h2>¿Quién es Jesucristo?</h2>
+                <p>Jesús es la figura central de la historia humana y el fundamento de la fe cristiana. La Biblia lo revela como el Hijo de Dios, totalmente divino y totalmente humano.</p>
+                <div class="grid-layout">
+                    <div>
+                        <h3>Él es el Salvador</h3>
+                        <p>Jesús vino con una misión: buscar y salvar a los perdidos. Él tomó voluntariamente el castigo por nuestros pecados en la cruz.</p>
+                    </div>
+                    <div>
+                        <h3>Él Venció a la Muerte</h3>
+                        <p>Tres días después de su crucifixión, Jesús resucitó de entre los muertos, demostrando su poder sobre el pecado y ofreciendo vida eterna a todos los que creen en Él.</p>
+                    </div>
+                </div>
+                <div class="verse-box">
+                    "Jesús le dijo: Yo soy el camino, y la verdad, y la vida; nadie viene al Padre, sino por mí." <br><strong>— Juan 14:6</strong>
+                </div>
+            </section>
+
+            <section class="content-card">
+                <h2>El Carácter de Dios</h2>
+                <ul>
+                    <li><strong>Dios es Amor:</strong> Su amor por ti es incondicional y eterno. (1 Juan 4:8)</li>
+                    <li><strong>Dios es Fiel:</strong> Sus promesas son confiables y nunca abandonará a quienes lo buscan. (Lamentaciones 3:22-23)</li>
+                    <li><strong>Dios es Santo y Justo:</strong> Él es completamente puro. Porque es justo, debe juzgar el pecado, pero porque es amoroso, proveyó un sustituto en Jesucristo.</li>
+                </ul>
+            </section>
+
+            <section class="content-card salvation-section">
+                <h2>Cómo Aceptar a Jesucristo</h2>
+                <p>Debido a la imperfección humana, estamos separados de Dios, pero Su inmenso amor cerró esa brecha a través de Su Hijo. Aquí están los pasos para recibir la vida eterna:</p>
+                <ul>
+                   <li><strong>Reconoce tu necesidad:</strong> Reconoce que necesitamos el perdón de Dios (Romanos 3:23).</li>
+                   <li><strong>Cree en Jesús:</strong> Comprende que Jesús murió en la cruz por tus pecados y resucitó (Juan 3:16).</li>
+                   <li><strong>Confiesa y vuélvete:</strong> Invita a Jesús a guiar tu vida como Señor y Salvador (Romanos 10:9).</li>
+                </ul>
+                <div class="prayer-box">
+                    "Dios querido, sé que soy un pecador, y te pido perdón. Creo que Jesucristo murió por mis pecados y resucitó. Invito a Jesús a entrar en mi corazón y tomar el control de mi vida. Amén."
+                </div>
+            </section>
+            
+            <section class="content-card">
+                <h2>Creciendo en tu Fe</h2>
+                <ul>
+                    <li><strong>Lee la Biblia:</strong> Comienza con el Evangelio de Juan para aprender más sobre Jesús.</li>
+                    <li><strong>Habla con Dios:</strong> La oración es simplemente tener una conversación con Él sobre tus preocupaciones y agradecimientos.</li>
+                    <li><strong>Encuentra Comunidad:</strong> Busca una iglesia local donde puedas adorar y crecer junto a otros creyentes.</li>
+                </ul>
+            </section>
+
+            <section class="content-card share-card">
+                <h2>Comparte las Buenas Nuevas</h2>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" class="share-btn btn-facebook">📘 Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=Descubre%20esperanza%20y%20salvaci%C3%B3n%20en%20Jesucristo%20en&url=https://www.joyisgod.com" target="_blank" class="share-btn btn-twitter">✖ X (Twitter)</a>
+                    <a href="https://api.whatsapp.com/send?text=Encuentra%20esperanza%20y%20salvaci%C3%B3n%20en%20https://www.joyisgod.com" target="_blank" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                    <a href="https://t.me/share/url?url=https://www.joyisgod.com" target="_blank" class="share-btn btn-telegram">✈ Telegram</a>
                 </div>
             </section>
         </div>
 
-        <!-- FRENCH CONTENT -->
+        <!-- ================= FRENCH (FRANÇAIS) ================= -->
         <div id="content-fr" class="lang-content">
             <section class="content-card">
-                <h2>L'Amour de Dieu pour Vous</h2>
-                <p>Peu importe où vous vivez, Dieu vous a créé avec un but et vous aime profondément.</p>
+                <h2>Bienvenue sur Joy Is God</h2>
+                <p>La vraie joie n'est pas un sentiment temporaire lié à des circonstances changeantes ; c'est un don inébranlable ancré dans le caractère de Dieu.</p>
                 <div class="verse-box">
-                    "Car Dieu a tant aimé le monde qu'il a donné son Fils unique..." <br><strong>— Jean 3:16</strong>
+                    "Que le Dieu de l'espérance vous remplisse de toute joie et de toute paix..." <br><strong>— Romains 15:13</strong>
+                </div>
+            </section>
+
+            <section class="content-card">
+                <h2>Promesses d'Espoir et de Paix</h2>
+                <div class="verse-box">
+                    "Je vous laisse la paix, je vous donne ma paix. Je ne vous donne pas comme le monde donne." <br><strong>— Jean 14:27</strong>
+                </div>
+            </section>
+
+            <section class="content-card theology-section">
+                <h2>Qui est Jésus-Christ ?</h2>
+                <p>La Bible le révèle comme le Fils de Dieu, pleinement divin et pleinement humain, venu pour sauver l'humanité.</p>
+                <div class="grid-layout">
+                    <div>
+                        <h3>Il est le Sauveur</h3>
+                        <p>Jésus a volontairement pris la punition de nos péchés sur la croix, nous offrant le pardon.</p>
+                    </div>
+                    <div>
+                        <h3>Il a vaincu la mort</h3>
+                        <p>Trois jours après sa crucifixion, Jésus est ressuscité des morts, prouvant sa puissance sur le péché et la mort.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-card">
+                <h2>Le Caractère de Dieu</h2>
+                <ul>
+                    <li><strong>Dieu est Amour :</strong> Son amour pour vous est inconditionnel et éternel.</li>
+                    <li><strong>Dieu est Fidèle :</strong> Ses promesses sont dignes de confiance.</li>
+                    <li><strong>Dieu est Saint et Juste :</strong> Il est complètement pur et a fourni un substitut en Jésus-Christ.</li>
+                </ul>
+            </section>
+
+            <section class="content-card salvation-section">
+                <h2>Accepter Jésus-Christ</h2>
+                <ul>
+                   <li><strong>Reconnaissez votre besoin :</strong> Nous avons tous besoin du pardon de Dieu.</li>
+                   <li><strong>Croyez en Jésus :</strong> Comprenez que Jésus est mort sur la croix pour vos péchés.</li>
+                   <li><strong>Confessez et tournez-vous :</strong> Invitez Jésus à diriger votre vie.</li>
+                </ul>
+                <div class="prayer-box">
+                    "Dieu bien-aimé, je sais que je suis un pécheur. Je crois que Jésus est mort pour mes péchés et qu'il est ressuscité. J'invite Jésus à entrer dans mon cœur. Amen."
+                </div>
+            </section>
+            
+            <section class="content-card share-card">
+                <h2>Partagez la Bonne Nouvelle</h2>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" class="share-btn btn-facebook">📘 Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=D%C3%A9couvrez%20l'espoir%20et%20le%20salut%20sur&url=https://www.joyisgod.com" target="_blank" class="share-btn btn-twitter">✖ X (Twitter)</a>
+                    <a href="https://api.whatsapp.com/send?text=Trouvez%20l'espoir%20sur%20https://www.joyisgod.com" target="_blank" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= CHINESE (中文) ================= -->
+        <div id="content-zh" class="lang-content">
+            <section class="content-card">
+                <h2>欢迎来到 Joy Is God</h2>
+                <p>真正的喜乐不是一种随环境变化的暂时情绪，而是一份扎根于神的属性、通过与耶稣基督建立个人关系而实现的坚定恩赐。</p>
+                <div class="verse-box">
+                    "但愿使人有盼望的神，因信将诸般的喜乐、平安充满你们的心..." <br><strong>— 罗马书 15:13</strong>
+                </div>
+            </section>
+
+            <section class="content-card">
+                <h2>盼望与平安的应许</h2>
+                <div class="verse-box">
+                    "我留下平安给你们；我将我的平安赐给你们。我所赐的，不像世人所赐的。" <br><strong>— 约翰福音 14:27</strong>
+                </div>
+            </section>
+
+            <section class="content-card theology-section">
+                <h2>耶稣基督是谁？</h2>
+                <p>耶稣是人类历史的核心人物，也是基督教信仰的根基。圣经启示祂是神的儿子，具有完全的神性和完全的人性。</p>
+                <div class="grid-layout">
+                    <div>
+                        <h3>祂是救主</h3>
+                        <p>耶稣来到世上是为了寻找和拯救失丧的人。祂甘愿在十字架上为我们的罪担当刑罚，赐予我们通向神的道路。</p>
+                    </div>
+                    <div>
+                        <h3>祂战胜了死亡</h3>
+                        <p>耶稣被钉十字架三天后从死里复活，证明了祂战胜罪恶和死亡的大能，并向所有信祂的人赐予永生。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-card">
+                <h2>神的属性</h2>
+                <ul>
+                    <li><strong>神是爱：</strong> 祂对你的爱是无条件且永恒的。</li>
+                    <li><strong>神是信实的：</strong> 即使环境改变，神依然不变，祂绝不离弃寻求祂的人。</li>
+                    <li><strong>神是圣洁与公义的：</strong> 祂绝对纯洁。因着公义，祂必须审判罪；因着慈爱，祂借着耶稣基督为你预备了救赎。</li>
+                </ul>
+            </section>
+
+            <section class="content-card salvation-section">
+                <h2>如何接受耶稣基督</h2>
+                <ul>
+                   <li><strong>承认你的需要：</strong> 认识到我们都需要神的赦免。</li>
+                   <li><strong>相信耶稣：</strong> 明白耶稣为你的罪死在十字架上并复活。</li>
+                   <li><strong>认罪并回转：</strong> 邀请耶稣作为你的生命之主。</li>
+                </ul>
+                <div class="prayer-box">
+                    "亲爱的神，我知道我是一个罪人，我向你寻求宽恕。我相信耶稣基督为我的罪死在十字架上并复活。我邀请耶稣进入我的心。奉耶稣的名祷告，阿们。"
+                </div>
+            </section>
+            
+            <section class="content-card share-card">
+                <h2>传播福音</h2>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" class="share-btn btn-facebook">📘 Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=%E5%9C%A8%20Joy%20Is%20God%20%E6%89%BE%E5%88%B0%E6%B0%B8%E6%81%92%E7%9A%84%E7%A5%9D%E7%A6%8F%EF%BC%A&url=https://www.joyisgod.com" target="_blank" class="share-btn btn-twitter">✖ X (Twitter)</a>
+                    <a href="https://api.whatsapp.com/send?text=%E5%88%86%E4%BA%AB%E7%A5%9D%E7%A6%8F%EF%BC%9Ahttps://www.joyisgod.com" target="_blank" class="share-btn btn-whatsapp">💚 WhatsApp</a>
                 </div>
             </section>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 joyisgod.com. Sharing the Gospel of Jesus Christ with every nation.</p>
+        <p>&copy; 2026 joyisgod.com. All rights reserved. Sharing the light of Christ with the world.</p>
     </footer>
 
-    <!-- JavaScript Logic -->
+    <!-- JavaScript for Visitor Counter & Language Switching -->
     <script>
-        // 1. Language & Verse Logic
-        const verses = [
-            { text: "\"The Lord is my shepherd; I lack nothing.\"", reference: "Psalm 23:1" },
-            { text: "\"I can do all this through him who gives me strength.\"", reference: "Philippians 4:13" },
-            { text: "\"For we walk by faith, not by sight.\"", reference: "2 Corinthians 5:7" }
-        ];
-
-        function changeLanguage(lang) {
-            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            const selected = document.getElementById('content-' + lang) || document.getElementById('content-en');
-            selected.classList.add('active');
-            localStorage.setItem('preferred_language', lang);
-        }
-
-        // 2. Visitor Counter Logic (Reset to 226)
         function initVisitorCounter() {
-            const STORAGE_KEY = 'joyisgod_visitor_count_reset_1';
-            const SESSION_KEY = 'joyisgod_visited_session_reset_1';
+            const STORAGE_KEY = 'joyisgod_visitor_count';
+            const SESSION_KEY = 'joyisgod_visited_session';
             
-            let count = localStorage.getItem(STORAGE_KEY) || 225;
-            count = parseInt(count, 10);
+            let count = localStorage.getItem(STORAGE_KEY);
+            
+            if (count === null) {
+                count = 226;
+                localStorage.setItem(STORAGE_KEY, count);
+            } else {
+                count = parseInt(count, 10);
+            }
 
             if (!sessionStorage.getItem(SESSION_KEY)) {
                 count += 1;
@@ -257,53 +725,41 @@
                 sessionStorage.setItem(SESSION_KEY, 'true');
             }
 
-            document.getElementById('visitorCount').textContent = count.toLocaleString();
-        }
-
-        // 3. PWA Installation & Service Worker Logic
-        let deferredPrompt;
-        const installBtn = document.getElementById('installAppBtn');
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installBtn.style.display = 'inline-block'; 
-        });
-
-        installBtn.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                if (outcome === 'accepted') {
-                    console.log('App installed.');
-                }
-                deferredPrompt = null;
-                installBtn.style.display = 'none'; 
+            const counterElement = document.getElementById('visitorCount');
+            if (counterElement) {
+                counterElement.textContent = count.toLocaleString();
             }
-        });
-
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(reg => console.log('Service Worker registered.', reg))
-                    .catch(err => console.error('Service Worker registration failed.', err));
-            });
         }
 
-        // 4. Init on Load
         window.addEventListener('DOMContentLoaded', () => {
             initVisitorCounter();
-            
-            const today = new Date();
-            const v = verses[today.getDate() % verses.length];
-            document.getElementById('daily-verse-container').innerHTML = `${v.text} <br><strong>— ${v.reference}</strong>`;
-            
-            const savedLang = localStorage.getItem('preferred_language');
+
+            // Language preference check via URL parameter or localStorage
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            const savedLang = langParam || localStorage.getItem('preferred_language');
+
             if (savedLang) {
-                document.getElementById('languageSelect').value = savedLang;
-                changeLanguage(savedLang);
+                const selectElement = document.getElementById('languageSelect');
+                if (selectElement) {
+                    selectElement.value = savedLang;
+                    changeLanguage(savedLang);
+                }
             }
         });
+
+        function changeLanguage(lang) {
+            const contents = document.querySelectorAll('.lang-content');
+            contents.forEach(el => el.classList.remove('active'));
+
+            const selectedContent = document.getElementById('content-' + lang);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+
+            localStorage.setItem('preferred_language', lang);
+        }
     </script>
+
 </body>
 </html>
