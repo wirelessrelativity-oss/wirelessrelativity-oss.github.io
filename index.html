@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Joy in God - Global Christian Faith & Good News | joyisgod.com</title>
+  <title>Joy in God — Global Christian Faith & Good News | joyisgod.com</title>
   <meta name="description" content="Discover global hope, peace, and eternal life in Jesus Christ. Read the Gospel in 20 major world languages, generate Scripture graphics, take faith quizzes, and share God's word globally.">
   <meta name="keywords" content="Joy in God, Gospel, Jesus Christ, Bible Verses, Salvation Prayer, Christian Faith, Multilingual Bible, John 3:16, Gospel in Arabic, Gospel in Spanish, Gospel in Chinese">
   <link rel="canonical" href="https://www.joyisgod.com/">
 
-  <!-- PWA & Mobile Web App Capabilities -->
+  <!-- PWA Capabilities -->
   <meta name="theme-color" content="#4f46e5">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -39,14 +39,14 @@
 
   <!-- OpenGraph Social Metadata -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Joy in God - Share God's Love Globally">
+  <meta property="og:title" content="Joy in God — Share God's Love Globally">
   <meta property="og:description" content="Discover the Good News of Jesus Christ in 20 global languages. Interactive scriptures, faith tools, and salvation prayer.">
   <meta property="og:url" content="https://www.joyisgod.com/">
   <meta property="og:image" content="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80">
 
   <!-- X / Twitter Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Joy in God - Global Christian Faith & Outreach">
+  <meta name="twitter:title" content="Joy in God — Global Christian Faith & Outreach">
   <meta name="twitter:description" content="Read the Gospel in 20 languages and share hope across the world.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80">
 
@@ -69,12 +69,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
   <style>
-    /* Prevent horizontal scrolling on smaller mobile viewports */
     html, body {
       overflow-x: hidden;
       max-width: 100vw;
     }
-    /* Smooth transition for language switching and modal displays */
     .fade-in {
       animation: fadeIn 0.35s ease-in-out forwards;
     }
@@ -82,12 +80,10 @@
       from { opacity: 0; transform: translateY(6px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    /* Touch target min dimensions */
     .touch-target {
       min-height: 44px;
       min-width: 44px;
     }
-    /* Custom scrollbar for multi-language tabs */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -99,11 +95,10 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
 
-  <!-- HEADER & NAVIGATION BAR -->
+  <!-- HEADER & NAVIGATION -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <!-- Brand Logo & Title -->
         <a href="#" class="flex items-center space-x-3 group">
           <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-800 text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -116,20 +111,18 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation Actions -->
         <div class="hidden md:flex items-center space-x-4">
-          <button onclick="openSalvationModal()" class="touch-target inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-sm hover:shadow transition">
+          <button onclick="openSalvationModal()" class="touch-target inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-sm transition">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
             <span id="nav-pray-btn">Accept Jesus</span>
           </button>
           
           <button onclick="openShareModal()" class="touch-target inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 transition">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
-            <span>Share Site</span>
+            <span id="nav-share-btn">Share Site</span>
           </button>
         </div>
 
-        <!-- Mobile Menu Hamburger Button -->
         <div class="flex items-center md:hidden space-x-2">
           <button onclick="openSalvationModal()" class="touch-target px-3 py-2 text-xs font-semibold text-white bg-indigo-600 rounded-lg shadow-sm">
             <span id="nav-pray-btn-mobile">Pray Now</span>
@@ -143,13 +136,13 @@
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer Dropdown -->
+    <!-- Mobile Drawer -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-4 space-y-3 shadow-lg">
-      <a href="#gospel-section" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-indigo-600">The Gospel</a>
-      <a href="#tools-section" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-indigo-600">Verse Generator</a>
-      <a href="#quiz-section" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-indigo-600">Faith Quiz</a>
-      <a href="#card-maker-section" onclick="toggleMobileMenu()" class="block py-2 text-base font-medium text-slate-700 hover:text-indigo-600">Card Maker</a>
-      <button onclick="toggleMobileMenu(); openShareModal();" class="w-full text-left py-2 font-medium text-indigo-600">Share joyisgod.com</button>
+      <a href="#gospel-section" onclick="toggleMobileMenu()" id="mob-link-gospel" class="block py-2 text-base font-medium text-slate-700 hover:text-indigo-600">The Gospel</a>
+      <a href="#tools-section" onclick="toggleMobileMenu()" id="mob-link-tools" class="block py-2 text-base font-medium text-slate-700 hover:text-indigo-600">Verse Generator</a>
+      <a href="#quiz-section" onclick="toggleMobileMenu()" id="mob-link-quiz" class="block py-2 text-base font-medium text-slate-700 hover:text-indigo-600">Faith Quiz</a>
+      <a href="#card-maker-section" onclick="toggleMobileMenu()" id="mob-link-cards" class="block py-2 text-base font-medium text-slate-700 hover:text-indigo-600">Card Maker</a>
+      <button onclick="toggleMobileMenu(); openShareModal();" id="mob-link-share" class="w-full text-left py-2 font-medium text-indigo-600">Share joyisgod.com</button>
     </div>
   </header>
 
@@ -159,10 +152,9 @@
       <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        <!-- Live Visitor Counter Badge -->
         <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/15 mb-6 shadow-inner">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-          <span class="text-xs sm:text-sm font-medium text-indigo-100">Global Visits: <strong id="visitor-counter" class="text-white font-bold">227</strong></span>
+          <span class="text-xs sm:text-sm font-medium text-indigo-100"><span id="hero-visit-label">Global Visits:</span> <strong id="visitor-counter" class="text-white font-bold">226</strong></span>
         </div>
 
         <h1 id="hero-title" class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
@@ -170,12 +162,11 @@
         </h1>
 
         <p id="hero-subtitle" class="max-w-3xl mx-auto text-base sm:text-lg lg:text-xl text-indigo-100 mb-8 leading-relaxed">
-          Welcome to <span class="text-amber-300 font-semibold">joyisgod.com</span>. God loves you deeply and has a miraculous purpose for your life. Read the Good News in your own language below.
+          Welcome to <span class="text-amber-300 font-semibold">joyisgod.com</span>. God loves you deeply and has a miraculous purpose for your life.
         </p>
 
-        <!-- Primary Hero Action Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button onclick="openSalvationModal()" class="touch-target w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-slate-900 bg-amber-400 hover:bg-amber-300 transition shadow-lg hover:shadow-amber-400/30 transform hover:-translate-y-0.5">
+          <button onclick="openSalvationModal()" class="touch-target w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-slate-900 bg-amber-400 hover:bg-amber-300 transition shadow-lg hover:shadow-amber-400/30">
             <span id="hero-salvation-btn">Receive Salvation Today</span>
           </button>
           <button onclick="openShareModal()" class="touch-target w-full sm:w-auto px-8 py-4 rounded-xl text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition">
@@ -189,20 +180,20 @@
     <section id="gospel-section" class="py-12 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-8">
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Read the Gospel in Your Language</h2>
-          <p class="text-slate-600 text-sm sm:text-base">Select from 20 world languages spoken by over 5 billion people across the globe.</p>
+          <h2 id="lang-section-title" class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Read the Gospel in Your Language</h2>
+          <p id="lang-section-subtitle" class="text-slate-600 text-sm sm:text-base">Select from 20 world languages spoken by over 5 billion people across the globe.</p>
         </div>
 
-        <!-- Language Dropdown Selector for Mobile/Fast Access -->
+        <!-- Quick Selector Dropdown -->
         <div class="max-w-xs mx-auto mb-6">
-          <label for="language-select-dropdown" class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 text-center">Quick Language Selector</label>
+          <label for="language-select-dropdown" id="lang-dropdown-label" class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 text-center">Quick Language Selector</label>
           <select id="language-select-dropdown" onchange="switchLanguage(this.value)" class="touch-target block w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50 text-slate-800 font-medium focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
             <option value="en">English</option>
             <option value="es">Español (Spanish)</option>
             <option value="fr">Français (French)</option>
             <option value="zh">中文 (Chinese)</option>
             <option value="pt">Português (Portuguese)</option>
-            <option value="ar">العربية (Arabic - RTL)</option>
+            <option value="ar">العربية (Arabic — RTL)</option>
             <option value="hi">हिन्दी (Hindi)</option>
             <option value="ru">Русский (Russian)</option>
             <option value="sw">Kiswahili (Swahili)</option>
@@ -215,12 +206,12 @@
             <option value="it">Italiano (Italian)</option>
             <option value="tl">Tagalog (Filipino)</option>
             <option value="bn">বাংলা (Bengali)</option>
-            <option value="ur">اردو (Urdu - RTL)</option>
+            <option value="ur">اردو (Urdu — RTL)</option>
             <option value="pl">Polski (Polish)</option>
           </select>
         </div>
 
-        <!-- Scrollable Horizontal Language Tab Bar -->
+        <!-- Horizontal Language Tabs -->
         <div class="flex overflow-x-auto space-x-2 pb-4 pt-2 no-scrollbar border-b border-slate-200 mb-8">
           <button onclick="switchLanguage('en')" id="tab-en" class="lang-tab touch-target px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition bg-indigo-600 text-white">English</button>
           <button onclick="switchLanguage('es')" id="tab-es" class="lang-tab touch-target px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition bg-slate-100 text-slate-700 hover:bg-slate-200">Español</button>
@@ -244,7 +235,7 @@
           <button onclick="switchLanguage('pl')" id="tab-pl" class="lang-tab touch-target px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition bg-slate-100 text-slate-700 hover:bg-slate-200">Polski</button>
         </div>
 
-        <!-- Dynamic Content Display Card -->
+        <!-- Gospel Card View -->
         <div id="content-container" class="fade-in max-w-4xl mx-auto bg-gradient-to-br from-indigo-50 to-amber-50 rounded-2xl p-6 sm:p-10 border border-indigo-100 shadow-md">
           <div class="flex items-center justify-between mb-6">
             <span id="selected-lang-badge" class="px-3 py-1 rounded-full bg-indigo-600 text-white text-xs font-bold uppercase tracking-wider">English</span>
@@ -264,7 +255,7 @@
               <span id="gospel-pray-cta">Say the Salvation Prayer</span>
             </button>
             <button onclick="copyCurrentVerse()" class="touch-target w-full sm:w-auto px-6 py-3 rounded-xl bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold text-sm transition">
-              <span>Copy Scripture</span>
+              <span id="gospel-copy-btn">Copy Scripture</span>
             </button>
           </div>
         </div>
@@ -274,24 +265,22 @@
     <!-- SCRIPTURE GENERATOR SECTION -->
     <section id="tools-section" class="py-16 bg-slate-50 border-b border-slate-200">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Interactive Scripture & Promise Generator</h2>
-        <p class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto mb-8">Select a topic below to receive encouraging Bible promises tailored for your life right now.</p>
+        <h2 id="gen-title" class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Interactive Scripture & Promise Generator</h2>
+        <p id="gen-subtitle" class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto mb-8">Select a topic below to receive encouraging Bible promises tailored for your life right now.</p>
 
-        <!-- Topic Buttons -->
         <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8">
-          <button onclick="generateVerse('peace')" class="topic-btn touch-target px-5 py-2.5 rounded-xl text-sm font-semibold bg-indigo-600 text-white shadow">Peace & Comfort</button>
-          <button onclick="generateVerse('hope')" class="topic-btn touch-target px-5 py-2.5 rounded-xl text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Hope & Strength</button>
-          <button onclick="generateVerse('love')" class="topic-btn touch-target px-5 py-2.5 rounded-xl text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">God's Love</button>
-          <button onclick="generateVerse('salvation')" class="topic-btn touch-target px-5 py-2.5 rounded-xl text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Salvation</button>
+          <button onclick="generateVerse('peace')" id="topic-btn-peace" class="topic-btn touch-target px-5 py-2.5 rounded-xl text-sm font-semibold bg-indigo-600 text-white shadow">Peace & Comfort</button>
+          <button onclick="generateVerse('hope')" id="topic-btn-hope" class="topic-btn touch-target px-5 py-2.5 rounded-xl text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Hope & Strength</button>
+          <button onclick="generateVerse('love')" id="topic-btn-love" class="topic-btn touch-target px-5 py-2.5 rounded-xl text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">God's Love</button>
+          <button onclick="generateVerse('salvation')" id="topic-btn-salvation" class="topic-btn touch-target px-5 py-2.5 rounded-xl text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Salvation</button>
         </div>
 
-        <!-- Generated Verse Display Card -->
         <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm max-w-3xl mx-auto text-left">
           <div class="flex items-center justify-between mb-4">
-            <span id="verse-topic-tag" class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Peace & Comfort</span>
+            <span id="verse-topic-tag" class="text-xs font-bold text-indigo-600 uppercase tracking-wider">PEACE & COMFORT</span>
             <button onclick="copyGeneratedVerse()" class="text-xs text-slate-500 hover:text-indigo-600 font-semibold flex items-center">
               <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-              Copy
+              <span id="gen-copy-btn">Copy</span>
             </button>
           </div>
           <blockquote id="generated-verse-text" class="text-lg sm:text-xl font-serif text-slate-900 leading-relaxed mb-3">
@@ -306,22 +295,22 @@
     <section id="quiz-section" class="py-16 bg-white border-b border-slate-200">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
-          <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">Interactive Tool</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-2">Test Your Faith Knowledge</h2>
-          <p class="text-slate-600 text-sm sm:text-base">Answer a quick question to discover key biblical truths about grace and eternal life.</p>
+          <span id="quiz-badge" class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">Interactive Tool</span>
+          <h2 id="quiz-title" class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-2">Test Your Faith Knowledge</h2>
+          <p id="quiz-subtitle" class="text-slate-600 text-sm sm:text-base">Answer a quick question to discover key biblical truths about grace and eternal life.</p>
         </div>
 
         <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
           <h3 id="quiz-question" class="text-base sm:text-lg font-bold text-slate-900 mb-6">How does a person receive eternal salvation according to the New Testament?</h3>
           
           <div id="quiz-options" class="space-y-3">
-            <button onclick="checkQuiz(0)" class="touch-target w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-indigo-50 hover:border-indigo-300 font-medium text-sm text-slate-800 transition">
+            <button onclick="checkQuiz(0)" id="quiz-opt-0" class="touch-target w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-indigo-50 hover:border-indigo-300 font-medium text-sm text-slate-800 transition">
               A) Through personal good deeds and human efforts alone
             </button>
-            <button onclick="checkQuiz(1)" class="touch-target w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-indigo-50 hover:border-indigo-300 font-medium text-sm text-slate-800 transition">
-              B) By God's grace through faith in Jesus Christ (Ephesians 2:8-9)
+            <button onclick="checkQuiz(1)" id="quiz-opt-1" class="touch-target w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-indigo-50 hover:border-indigo-300 font-medium text-sm text-slate-800 transition">
+              B) By God's grace through faith in Jesus Christ (Ephesians 2:8–9)
             </button>
-            <button onclick="checkQuiz(2)" class="touch-target w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-indigo-50 hover:border-indigo-300 font-medium text-sm text-slate-800 transition">
+            <button onclick="checkQuiz(2)" id="quiz-opt-2" class="touch-target w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-indigo-50 hover:border-indigo-300 font-medium text-sm text-slate-800 transition">
               C) By traveling to specific religious pilgrimage sites
             </button>
           </div>
@@ -331,27 +320,25 @@
       </div>
     </section>
 
-    <!-- SHAREABLE SCRIPTURE CARD BUILDER (CANVAS GENERATOR) -->
+    <!-- SCRIPTURE CARD BUILDER -->
     <section id="card-maker-section" class="py-16 bg-slate-900 text-white border-b border-slate-800">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-3">Create & Download Image Verses</h2>
-        <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-8">Design custom image graphics to post on X (Twitter), Instagram, Facebook, WhatsApp, or text messages.</p>
+        <h2 id="card-title" class="text-2xl sm:text-3xl font-bold mb-3">Create & Download Image Verses</h2>
+        <p id="card-subtitle" class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-8">Design custom image graphics to post on X (Twitter), Instagram, Facebook, WhatsApp, or text messages.</p>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
-          <!-- Canvas Visual Preview -->
           <div class="flex justify-center">
             <canvas id="verseCanvas" width="500" height="500" class="w-full max-w-[350px] sm:max-w-[400px] h-auto rounded-2xl shadow-2xl border border-slate-700 bg-indigo-950"></canvas>
           </div>
 
-          <!-- Controls -->
           <div class="space-y-5 text-left bg-slate-800 p-6 rounded-2xl border border-slate-700">
             <div>
-              <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Custom Verse Text</label>
+              <label id="card-label-text" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Custom Verse Text</label>
               <textarea id="card-text-input" rows="3" oninput="updateCardCanvas()" class="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:ring-2 focus:ring-indigo-500">Joy comes in the morning. God is faithful forever.</textarea>
             </div>
 
             <div>
-              <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Background Theme</label>
+              <label id="card-label-theme" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Background Theme</label>
               <div class="flex space-x-3">
                 <button onclick="setCardTheme('indigo')" class="w-8 h-8 rounded-full bg-indigo-900 border-2 border-white focus:outline-none"></button>
                 <button onclick="setCardTheme('amber')" class="w-8 h-8 rounded-full bg-amber-900 border-2 border-white focus:outline-none"></button>
@@ -363,7 +350,7 @@
             <div class="pt-3">
               <button onclick="downloadVerseCard()" class="touch-target w-full py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow transition flex items-center justify-center">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                Download Graphic Card (PNG)
+                <span id="card-download-btn">Download Graphic Card (PNG)</span>
               </button>
             </div>
           </div>
@@ -371,64 +358,97 @@
       </div>
     </section>
 
-    <!-- SEO FAQ SECTION -->
+    <!-- FAQ SECTION -->
     <section class="py-16 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-10">Frequently Asked Questions About Faith</h2>
+        <h2 id="faq-title" class="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-10">Frequently Asked Questions About Faith</h2>
         
         <div class="space-y-6">
           <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
-            <h3 class="text-base font-bold text-slate-900 mb-2">What is the core message of joyisgod.com?</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">Joy in God is dedicated to spreading the Good News of Jesus Christ across all nations in 20 global languages. God offers forgiveness, eternal life, and true joy to anyone who believes in His Son.</p>
+            <h3 id="faq-q1" class="text-base font-bold text-slate-900 mb-2">What is the core message of joyisgod.com?</h3>
+            <p id="faq-a1" class="text-sm text-slate-600 leading-relaxed">Joy in God is dedicated to spreading the Good News of Jesus Christ across all nations in 20 global languages. God offers forgiveness, eternal life, and true joy to anyone who believes in His Son.</p>
           </div>
 
           <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
-            <h3 class="text-base font-bold text-slate-900 mb-2">How can I start my relationship with God today?</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">You can accept Jesus Christ right now by praying from your heart, acknowledging Him as your Savior, and trusting in His love and resurrection.</p>
+            <h3 id="faq-q2" class="text-base font-bold text-slate-900 mb-2">How can I start my relationship with God today?</h3>
+            <p id="faq-a2" class="text-sm text-slate-600 leading-relaxed">You can accept Jesus Christ right now by praying from your heart, acknowledging Him as your Savior, and trusting in His love and resurrection.</p>
           </div>
 
           <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
-            <h3 class="text-base font-bold text-slate-900 mb-2">Can I share this website with friends in other countries?</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">Yes! Click the 'Share Site' button or generate a custom QR code to send joyisgod.com via WhatsApp, Telegram, WeChat, X, or email in any of the 20 supported languages.</p>
+            <h3 id="faq-q3" class="text-base font-bold text-slate-900 mb-2">Can I share this website with friends in other countries?</h3>
+            <p id="faq-a3" class="text-sm text-slate-600 leading-relaxed">Yes! Click the 'Share Site' button or generate a custom QR code to send joyisgod.com via WhatsApp, Telegram, WeChat, X, or email in any of the 20 supported languages.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- DARK FOOTER WITH PROMINENT X (TWITTER) BRANDING -->
+  <!-- DARK FOOTER WITH EXPANDED SOCIAL MEDIA SHARING -->
   <footer class="bg-slate-950 text-white border-t border-slate-800 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
         
-        <!-- Brand & Description -->
-        <div class="text-center md:text-left space-y-2">
-          <div class="flex items-center justify-center md:justify-start space-x-2">
+        <!-- Brand Info -->
+        <div class="text-center lg:text-left space-y-2">
+          <div class="flex items-center justify-center lg:justify-start space-x-2">
             <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold">J</div>
             <span class="text-lg font-bold tracking-tight">Joy in God</span>
           </div>
-          <p class="text-xs text-slate-400 max-w-sm">Proclaiming salvation, hope, and peace through Jesus Christ to all nations worldwide.</p>
+          <p id="footer-tagline" class="text-xs text-slate-400 max-w-sm">Proclaiming salvation, hope, and peace through Jesus Christ to all nations worldwide.</p>
         </div>
 
-        <!-- High-Contrast X (Twitter) Logo & Share Action Badge -->
+        <!-- Social Media Sharing Grid -->
         <div class="flex flex-col items-center space-y-3">
-          <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Follow & Share on X</span>
+          <span id="footer-share-label" class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Follow & Share Globally</span>
           
-          <a id="footer-x-link" href="https://x.com/intent/tweet?text=Discover%20eternal%20joy%20and%20peace%20at%20https%3A%2F%2Fwww.joyisgod.com" target="_blank" rel="noopener noreferrer" class="touch-target inline-flex items-center space-x-3 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-medium text-sm transition shadow-md group">
-            <!-- High-Visibility Vector X Badge Icon -->
-            <div class="p-1.5 rounded-md bg-black text-white border border-slate-600 group-hover:border-indigo-500 transition">
-              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </div>
-            <span>Share on X</span>
-          </a>
+          <div class="flex flex-wrap justify-center gap-2 max-w-md">
+            <!-- X (Twitter) -->
+            <a href="https://x.com/intent/tweet?text=Discover%20eternal%20joy%20and%20peace%20at%20https%3A%2F%2Fwww.joyisgod.com" target="_blank" rel="noopener noreferrer" class="touch-target inline-flex items-center space-x-2 px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-medium text-xs transition shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>X</span>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://api.whatsapp.com/send?text=Discover%20eternal%20joy%20and%20peace%20in%20Jesus%20Christ%3A%20https%3A%2F%2Fwww.joyisgod.com" target="_blank" rel="noopener noreferrer" class="touch-target inline-flex items-center space-x-2 px-3 py-2 rounded-xl bg-emerald-950 hover:bg-emerald-900 border border-emerald-700 text-emerald-200 font-medium text-xs transition shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.joyisgod.com" target="_blank" rel="noopener noreferrer" class="touch-target inline-flex items-center space-x-2 px-3 py-2 rounded-xl bg-blue-950 hover:bg-blue-900 border border-blue-700 text-blue-200 font-medium text-xs transition shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Facebook</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="touch-target inline-flex items-center space-x-2 px-3 py-2 rounded-xl bg-pink-950 hover:bg-pink-900 border border-pink-700 text-pink-200 font-medium text-xs transition shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Instagram</span>
+            </a>
+
+            <!-- Telegram -->
+            <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.joyisgod.com&text=Discover%20eternal%20joy%20and%20peace%20in%20Jesus%20Christ" target="_blank" rel="noopener noreferrer" class="touch-target inline-flex items-center space-x-2 px-3 py-2 rounded-xl bg-sky-950 hover:bg-sky-900 border border-sky-700 text-sky-200 font-medium text-xs transition shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.128.832.941z"/></svg>
+              <span>Telegram</span>
+            </a>
+
+            <!-- Pinterest -->
+            <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.joyisgod.com&media=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1504052434569-70ad5836ab65&description=Joy%20in%20God" target="_blank" rel="noopener noreferrer" class="touch-target inline-flex items-center space-x-2 px-3 py-2 rounded-xl bg-red-950 hover:bg-red-900 border border-red-700 text-red-200 font-medium text-xs transition shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+              <span>Pinterest</span>
+            </a>
+
+            <!-- WeChat QR Trigger -->
+            <button onclick="openShareModal()" class="touch-target inline-flex items-center space-x-2 px-3 py-2 rounded-xl bg-lime-950 hover:bg-lime-900 border border-lime-700 text-lime-200 font-medium text-xs transition shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.06 5.548l-.772 2.31 2.73-1.365c1.13.314 2.32.484 3.55.484 4.8 0 8.69-3.288 8.69-7.342s-3.89-7.342-8.567-7.342zm-2.88 4.31a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16zm5.76 0a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16zm10.23 6.69c0-3.38-3.28-6.12-7.33-6.12-.51 0-1.01.05-1.5.14 2.85 1.55 4.7 4.19 4.7 7.15 0 1.25-.33 2.43-.93 3.48l1.79.89-.5 1.51c1.24-.88 2.01-2.18 2.01-3.63zm-4.9-2.16a.81.81 0 1 1 0 1.62.81.81 0 0 1 0-1.62zm3.88 0a.81.81 0 1 1 0 1.62.81.81 0 0 1 0-1.62z"/></svg>
+              <span>WeChat</span>
+            </button>
+          </div>
         </div>
 
-        <!-- Copyright & Static Indicator -->
-        <div class="text-center md:text-right text-xs text-slate-500 space-y-1">
+        <div class="text-center lg:text-right text-xs text-slate-500 space-y-1">
           <p>&copy; <span id="current-year">2026</span> joyisgod.com. All Rights Reserved.</p>
-          <p>Global Multilingual Christian Outreach</p>
+          <p id="footer-type">Global Multilingual Christian Outreach</p>
         </div>
       </div>
     </div>
@@ -438,7 +458,6 @@
   <div id="salvation-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative transform transition-all fade-in max-h-[90vh] overflow-y-auto">
       
-      <!-- Close Button -->
       <button onclick="closeSalvationModal()" class="touch-target absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2 rounded-full" aria-label="Close modal">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
@@ -451,7 +470,6 @@
         <p id="modal-prayer-subtitle" class="text-xs text-indigo-600 font-semibold uppercase tracking-wider mt-1">Accept Jesus in Your Native Language</p>
       </div>
 
-      <!-- Translated Prayer Text Box -->
       <div id="modal-prayer-box" class="bg-indigo-50 border border-indigo-100 rounded-xl p-5 mb-6 text-slate-800 text-base leading-relaxed italic font-serif">
         "Dear Heavenly Father, I come to You today acknowledging my need for You. I believe that Jesus Christ is Your Son, who died on the cross for my sins and rose again. I repent of my sins and open my heart to receive Jesus as my Lord and Savior. Thank You for forgiving me and giving me eternal life today. Amen."
       </div>
@@ -460,7 +478,7 @@
         <button onclick="confirmSalvationDecision()" class="touch-target w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow transition">
           <span id="modal-confirm-btn">I Prayed This Prayer Today!</span>
         </button>
-        <button onclick="closeSalvationModal()" class="touch-target w-full py-2.5 rounded-xl border border-slate-300 text-slate-600 font-medium text-sm hover:bg-slate-100 transition">
+        <button onclick="closeSalvationModal()" id="modal-close-btn" class="touch-target w-full py-2.5 rounded-xl border border-slate-300 text-slate-600 font-medium text-sm hover:bg-slate-100 transition">
           Close
         </button>
       </div>
@@ -480,33 +498,30 @@
       </button>
 
       <div class="text-center mb-6">
-        <h3 class="text-2xl font-bold text-slate-900 mb-1">Share Joy in God</h3>
-        <p class="text-xs text-slate-500">Scan QR Code or copy link to share globally</p>
+        <h3 id="share-modal-title" class="text-2xl font-bold text-slate-900 mb-1">Share Joy in God</h3>
+        <p id="share-modal-subtitle" class="text-xs text-slate-500">Scan QR Code or copy link to share globally</p>
       </div>
 
-      <!-- QR Code Output Display -->
       <div class="flex justify-center mb-6">
         <div id="qrcode-container" class="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm"></div>
       </div>
 
-      <!-- Quick Action Share Buttons -->
       <div class="space-y-3">
         <button onclick="triggerNativeShare()" class="touch-target w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow transition flex items-center justify-center">
           <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
-          Share Via Native Apps
+          <span id="share-native-btn">Share Via Native Apps</span>
         </button>
         <button onclick="copySiteLink()" class="touch-target w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition flex items-center justify-center">
-          Copy Website Link (www.joyisgod.com)
+          <span id="share-copy-btn">Copy Website Link (www.joyisgod.com)</span>
         </button>
       </div>
     </div>
   </div>
 
-  <!-- JAVASCRIPT LOGIC & MULTILINGUAL DATA FRAMEWORK -->
+  <!-- JAVASCRIPT LOGIC & COMPLETE 20-LANGUAGE DICTIONARY -->
   <script>
-    // 1. BASELINE VISITOR COUNTER LOGIC
-    // Set starting baseline count to 227 as requested
-    const BASE_VISITOR_COUNT = 227;
+    // 1. VISITOR COUNTER RESET TO BASELINE 226
+    const BASE_VISITOR_COUNT = 226;
 
     function initVisitorCounter() {
       let localVisits = parseInt(localStorage.getItem('joyisgod_visits') || '0', 10);
@@ -517,7 +532,6 @@
       }
       const totalCount = BASE_VISITOR_COUNT + localVisits;
       
-      // Animated count-up effect
       let currentDisplay = BASE_VISITOR_COUNT;
       const counterEl = document.getElementById('visitor-counter');
       if (counterEl) {
@@ -533,221 +547,247 @@
       }
     }
 
-    // 2. 20 GLOBAL LANGUAGES TRANSLATION DATA DICTIONARY
+    // 2. COMPLETE 20-LANGUAGE TRANSLATION DICTIONARY
     const translations = {
       en: {
         badge: "English",
         dir: "ltr",
+        navPray: "Accept Jesus",
+        navShare: "Share Site",
+        heroVisitLabel: "Global Visits:",
         heroTitle: "Experience Eternal Joy & Peace in Jesus Christ",
         heroSubtitle: "Welcome to joyisgod.com. God loves you deeply and has a miraculous purpose for your life.",
+        heroSalvationBtn: "Receive Salvation Today",
+        heroShareBtn: "Spread God's Word",
+        langTitle: "Read the Gospel in Your Language",
+        langSubtitle: "Select from 20 world languages spoken by over 5 billion people across the globe.",
+        dropdownLabel: "Quick Language Selector",
         verse: '"For God so loved the world that He gave His one and only Son, that whoever believes in Him shall not perish but have eternal life."',
         explanation: "God created humanity to live in fellowship, peace, and eternal joy. Through faith in Jesus Christ, our sins are forgiven, and we receive free salvation and new life today.",
+        gospelPrayCta: "Say the Salvation Prayer",
+        gospelCopyBtn: "Copy Scripture",
+        genTitle: "Interactive Scripture & Promise Generator",
+        genSubtitle: "Select a topic below to receive encouraging Bible promises tailored for your life right now.",
+        btnPeace: "Peace & Comfort",
+        btnHope: "Hope & Strength",
+        btnLove: "God's Love",
+        btnSalvation: "Salvation",
+        genCopy: "Copy",
+        quizBadge: "Interactive Tool",
+        quizTitle: "Test Your Faith Knowledge",
+        quizSubtitle: "Answer a quick question to discover key biblical truths about grace and eternal life.",
+        quizQ: "How does a person receive eternal salvation according to the New Testament?",
+        quizA0: "A) Through personal good deeds and human efforts alone",
+        quizA1: "B) By God's grace through faith in Jesus Christ (Ephesians 2:8–9)",
+        quizA2: "C) By traveling to specific religious pilgrimage sites",
+        quizCorrect: "<strong>Correct!</strong> Salvation is a free gift received through grace and faith in Jesus Christ, not by human deeds alone (Ephesians 2:8–9).",
+        quizIncorrect: "<strong>Not quite.</strong> The Bible teaches that salvation is a free gift of God's grace through faith in Jesus Christ, rather than human works alone.",
+        cardTitle: "Create & Download Image Verses",
+        cardSubtitle: "Design custom image graphics to post on X (Twitter), Instagram, Facebook, WhatsApp, or text messages.",
+        cardTextLabel: "Custom Verse Text",
+        cardThemeLabel: "Background Theme",
+        cardDownloadBtn: "Download Graphic Card (PNG)",
+        faqTitle: "Frequently Asked Questions About Faith",
+        faqQ1: "What is the core message of joyisgod.com?",
+        faqA1: "Joy in God is dedicated to spreading the Good News of Jesus Christ across all nations in 20 global languages. God offers forgiveness, eternal life, and true joy to anyone who believes in His Son.",
+        faqQ2: "How can I start my relationship with God today?",
+        faqA2: "You can accept Jesus Christ right now by praying from your heart, acknowledging Him as your Savior, and trusting in His love and resurrection.",
+        faqQ3: "Can I share this website with friends in other countries?",
+        faqA3: "Yes! Click the 'Share Site' button or generate a custom QR code to send joyisgod.com via WhatsApp, Telegram, WeChat, X, or email in any of the 20 supported languages.",
+        footerTagline: "Proclaiming salvation, hope, and peace through Jesus Christ to all nations worldwide.",
+        footerShareLabel: "Follow & Share Globally",
         salvationTitle: "Salvation Prayer",
-        salvationPrayer: '"Dear Heavenly Father, I come to You today acknowledging my need for You. I believe that Jesus Christ is Your Son, who died on the cross for my sins and rose again. I repent of my sins and open my heart to receive Jesus as my Lord and Savior. Thank You for forgiving me and giving me eternal life today. Amen."'
+        salvationSubtitle: "Accept Jesus in Your Native Language",
+        salvationPrayer: '"Dear Heavenly Father, I come to You today acknowledging my need for You. I believe that Jesus Christ is Your Son, who died on the cross for my sins and rose again. I repent of my sins and open my heart to receive Jesus as my Lord and Savior. Thank You for forgiving me and giving me eternal life today. Amen."',
+        modalConfirmBtn: "I Prayed This Prayer Today!",
+        modalConfirmMsg: "Hallelujah! Welcome to the family of God! Heaven rejoices over your decision today.",
+        shareModalTitle: "Share Joy in God",
+        shareModalSubtitle: "Scan QR Code or copy link to share globally",
+        shareNativeBtn: "Share Via Native Apps",
+        shareCopyBtn: "Copy Website Link (www.joyisgod.com)"
       },
       es: {
         badge: "Español",
         dir: "ltr",
+        navPray: "Aceptar a Jesús",
+        navShare: "Compartir Sitio",
+        heroVisitLabel: "Visitas Globales:",
         heroTitle: "Experimenta la Gozo y Paz Eterna en Jesucristo",
         heroSubtitle: "Bienvenido a joyisgod.com. Dios te ama profundamente y tiene un propósito maravilloso para tu vida.",
+        heroSalvationBtn: "Recibe la Salvación Hoy",
+        heroShareBtn: "Difunde la Palabra de Dios",
+        langTitle: "Lee el Evangelio en tu Idioma",
+        langSubtitle: "Selecciona entre 20 idiomas hablados por más de 5 mil millones de personas en todo el mundo.",
+        dropdownLabel: "Selector Rápido de Idioma",
         verse: '"Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna."',
         explanation: "Dios creó a la humanidad para vivir en paz y comunión eterna. A través de la fe en Jesucristo, nuestros pecados son perdonados y recibimos vida eterna.",
+        gospelPrayCta: "Hacer la Oración de Salvación",
+        gospelCopyBtn: "Copiar Escritura",
+        genTitle: "Generador Interactivo de Promesas Bíblicas",
+        genSubtitle: "Selecciona un tema para recibir promesas bíblicas reconfortantes para tu vida.",
+        btnPeace: "Paz y Consuelo",
+        btnHope: "Esperanza y Fuerza",
+        btnLove: "Amor de Dios",
+        btnSalvation: "Salvación",
+        genCopy: "Copiar",
+        quizBadge: "Herramienta Interactiva",
+        quizTitle: "Pone a Prueba tus Conocimientos",
+        quizSubtitle: "Responde una pregunta rápida para descubrir verdades bíblicas clave sobre la gracia.",
+        quizQ: "¿Cómo recibe una persona la salvación eterna según el Nuevo Testamento?",
+        quizA0: "A) Solo a través de buenas obras personales y esfuerzo humano",
+        quizA1: "B) Por la gracia de Dios mediante la fe en Jesucristo (Efesios 2:8–9)",
+        quizA2: "C) Viajando a lugares específicos de peregrinación religiosa",
+        quizCorrect: "<strong>¡Correcto!</strong> La salvación es un regalo gratuito recibido por gracia a través de la fe en Jesucristo (Efesios 2:8–9).",
+        quizIncorrect: "<strong>No exactamente.</strong> La Biblia enseña que la salvación es un regalo gratuito de Dios por medio de la fe.",
+        cardTitle: "Crea y Descarga Versículos en Imagen",
+        cardSubtitle: "Diseña tarjetas con versículos para publicar en X (Twitter), Instagram, Facebook o WhatsApp.",
+        cardTextLabel: "Texto del Versículo",
+        cardThemeLabel: "Tema de Fondo",
+        cardDownloadBtn: "Descargar Tarjeta (PNG)",
+        faqTitle: "Preguntas Frecuentes sobre la Fe",
+        faqQ1: "¿Cuál es el mensaje principal de joyisgod.com?",
+        faqA1: "Joy in God está dedicado a difundir las Buenas Nuevas de Jesucristo en 20 idiomas globales.",
+        faqQ2: "¿Cómo puedo comenzar mi relación con Dios hoy?",
+        faqA2: "Puedes aceptar a Jesucristo ahora mismo orando de corazón y reconociéndolo como tu Salvador.",
+        faqQ3: "¿Puedo compartir este sitio web con amigos en otros países?",
+        faqA3: "¡Sí! Haz clic en 'Compartir Sitio' o genera un código QR para enviarlo por WhatsApp, Telegram o X.",
+        footerTagline: "Proclamando salvación, esperanza y paz a través de Jesucristo a todas las naciones.",
+        footerShareLabel: "Sigue y Comparte Globalmente",
         salvationTitle: "Oración de Salvación",
-        salvationPrayer: '"Querido Padre Celestial, vengo a Ti hoy reconociendo mi necesidad de Ti. Creo que Jesucristo es Tu Hijo, quien murió en la cruz por mis pecados y resucitó. Me arrepiento de mis pecados y abro mi corazón para recibir a Jesús como mi Señor y Salvador. Gracias por perdonarme y darme vida eterna hoy. Amén."'
+        salvationSubtitle: "Acepta a Jesús en tu Idioma Nativo",
+        salvationPrayer: '"Querido Padre Celestial, vengo a Ti hoy reconociendo mi necesidad de Ti. Creo que Jesucristo es Tu Hijo, quien murió en la cruz por mis pecados y resucitó. Me arrepiento de mis pecados y abro mi corazón para recibir a Jesús como mi Señor y Salvador. Gracias por perdonarme y darme vida eterna hoy. Amén."',
+        modalConfirmBtn: "¡Hice esta Oración Hoy!",
+        modalConfirmMsg: "¡Aleluya! ¡Bienvenido a la familia de Dios! El cielo se regocija por tu decisión hoy.",
+        shareModalTitle: "Compartir Joy in God",
+        shareModalSubtitle: "Escanea el código QR o copia el enlace para compartir",
+        shareNativeBtn: "Compartir mediante Aplicaciones",
+        shareCopyBtn: "Copiar Enlace (www.joyisgod.com)"
       },
       fr: {
         badge: "Français",
         dir: "ltr",
+        navPray: "Accepter Jésus",
+        navShare: "Partager le Site",
+        heroVisitLabel: "Visites Globales:",
         heroTitle: "Éprouvez la Joie et la Paix Éternelles en Jésus-Christ",
         heroSubtitle: "Bienvenue sur joyisgod.com. Dieu vous aime profondément et a un dessein miraculeux pour votre vie.",
+        heroSalvationBtn: "Recevez le Salut Aujourd'hui",
+        heroShareBtn: "Répandez la Parole de Dieu",
+        langTitle: "Lisez l'Évangile dans Votre Langue",
+        langSubtitle: "Choisissez parmi 20 langues parlées par plus de 5 milliards de personnes dans le monde.",
+        dropdownLabel: "Sélecteur de Langue Rapide",
         verse: '"Car Dieu a tant aimé le monde qu\'il a donné son Fils unique, afin que quiconque croit en lui ne périsse point, mais qu\'il ait la vie éternelle."',
         explanation: "Dieu a créé l'humanité pour vivre dans la paix et la joie éternelle. Par la foi en Jésus-Christ, nos péchés sont pardonnés.",
+        gospelPrayCta: "Réciter la Prière du Salut",
+        gospelCopyBtn: "Copier l'Écriture",
+        genTitle: "Générateur Interactif de Promesses Bibliques",
+        genSubtitle: "Sélectionnez un thème pour recevoir des promesses bibliques réconfortantes.",
+        btnPeace: "Paix et Réconfort",
+        btnHope: "Espérance et Force",
+        btnLove: "Amour de Dieu",
+        btnSalvation: "Salut",
+        genCopy: "Copier",
+        quizBadge: "Outil Interactif",
+        quizTitle: "Testez Vos Connaissances",
+        quizSubtitle: "Répondez à une question rapide pour découvrir les vérités bibliques sur la grâce.",
+        quizQ: "Comment une personne reçoit-elle le salut éternel selon le Nouveau Testament ?",
+        quizA0: "A) Par les bonnes œuvres personnelles et les efforts humains seuls",
+        quizA1: "B) Par la grâce de Dieu au moyen de la foi en Jésus-Christ (Éphésiens 2:8–9)",
+        quizA2: "C) En voyageant vers des lieux de pèlerinage religieux spécifiques",
+        quizCorrect: "<strong>Correct !</strong> Le salut est un don gratuit reçu par la grâce par la foi en Jésus-Christ (Éphésiens 2:8–9).",
+        quizIncorrect: "<strong>Pas tout à fait.</strong> La Bible enseigne que le salut est un don gratuit de Dieu par la foi.",
+        cardTitle: "Créez et Téléchargez des Versets en Image",
+        cardSubtitle: "Créez des images personnalisées à publier sur X (Twitter), Instagram, Facebook ou WhatsApp.",
+        cardTextLabel: "Texte du Verset",
+        cardThemeLabel: "Thème de Fond",
+        cardDownloadBtn: "Télécharger l'Image (PNG)",
+        faqTitle: "Foire Aux Questions sur la Foi",
+        faqQ1: "Quel est le message principal de joyisgod.com ?",
+        faqA1: "Joy in God est dédié à la diffusion de la Bonne Nouvelle de Jésus-Christ en 20 langues.",
+        faqQ2: "Comment puis-je commencer ma relation avec Dieu aujourd'hui ?",
+        faqA2: "Vous pouvez accepter Jésus-Christ dès maintenant en priant de tout votre cœur.",
+        faqQ3: "Puis-je partager ce site avec des amis dans d'autres pays ?",
+        faqA3: "Oui ! Cliquez sur 'Partager le Site' ou générez un code QR pour l'envoyer via WhatsApp ou X.",
+        footerTagline: "Proclamer le salut, l'espérance et la paix en Jésus-Christ à toutes les nations.",
+        footerShareLabel: "Suivre et Partager dans le Monde",
         salvationTitle: "Prière de Salut",
-        salvationPrayer: '"Cher Père Céleste, je viens à Toi aujourd\'hui en reconnaissant mon besoin de Toi. Je crois que Jésus-Christ est Ton Fils, qui est mort sur la croix pour mes péchés et est ressuscité. Je me repens de mes péchés et j\'ouvre mon cœur pour recevoir Jésus comme mon Seigneur et Sauveur. Merci de me pardonner et de me donner la vie éternelle aujourd\'hui. Amen."'
+        salvationSubtitle: "Acceptez Jésus dans Votre Langue Maternelle",
+        salvationPrayer: '"Cher Père Céleste, je viens à Toi aujourd\'hui en reconnaissant mon besoin de Toi. Je crois que Jésus-Christ est Ton Fils, qui est mort sur la croix pour mes péchés et est ressuscité. Je me repens de mes péchés et j\'ouvre mon cœur pour recevoir Jésus comme mon Seigneur et Sauveur. Merci de me pardonner et de me donner la vie éternelle aujourd\'hui. Amen."',
+        modalConfirmBtn: "J'ai Fait Cette Prière Aujourd'hui !",
+        modalConfirmMsg: "Alléluia ! Bienvenue dans la famille de Dieu ! Le ciel se réjouit de votre décision.",
+        shareModalTitle: "Partager Joy in God",
+        shareModalSubtitle: "Scannez le code QR ou copiez le lien pour partager",
+        shareNativeBtn: "Partager via des Applications",
+        shareCopyBtn: "Copier le Lien (www.joyisgod.com)"
       },
       zh: {
         badge: "中文",
         dir: "ltr",
+        navPray: "接受耶稣",
+        navShare: "分享网站",
+        heroVisitLabel: "全球访问量：",
         heroTitle: "在耶稣基督里体验永恒的喜乐与平安",
         heroSubtitle: "欢迎来到 joyisgod.com。神深爱你，对你的生命有一个神奇的旨意。",
+        heroSalvationBtn: "今天接受救恩",
+        heroShareBtn: "传播神的话语",
+        langTitle: "用您的母语阅读福音",
+        langSubtitle: "从全球超过 50 亿人使用的 20 种语言中进行选择。",
+        dropdownLabel: "快速语言选择器",
         verse: '“神爱世人，甚至将他的独生子赐给他们，叫一切信他的，不至灭亡，反得永生。”',
         explanation: "神创造人类是为了让我们享受和平与永恒的喜乐。通过对耶稣基督的信仰，我们的罪得到赦免，今天就获得免费的救赎。",
+        gospelPrayCta: "作决志祷告",
+        gospelCopyBtn: "复制经文",
+        genTitle: "互动圣经应许生成器",
+        genSubtitle: "选择一个主题，获取适合您当前生活的圣经应许。",
+        btnPeace: "平安与安慰",
+        btnHope: "希望与力量",
+        btnLove: "神的慈爱",
+        btnSalvation: "救恩",
+        genCopy: "复制",
+        quizBadge: "互动工具",
+        quizTitle: "测试您的信仰知识",
+        quizSubtitle: "回答一个简单的问题，了解有关恩典和永生的圣经真理。",
+        quizQ: "根据《新约圣经》，人如何获得永恒的救恩？",
+        quizA0: "A) 仅靠个人的善行和人类的努力",
+        quizA1: "B) 靠着神的恩典，借着对耶稣基督的信心（以弗所书 2:8–9）",
+        quizA2: "C) 前往特定的宗教圣地朝圣",
+        quizCorrect: "<strong>正确！</strong> 救恩是借着信靠耶稣基督由恩典赐予的免费礼物（以弗所书 2:8–9）。",
+        quizIncorrect: "<strong>不完全正确。</strong> 圣经教导我们，救恩是神借着信心赐下的免费恩典。",
+        cardTitle: "制作并下载圣经图片",
+        cardSubtitle: "设计自定义经文图片，发布到 X (Twitter)、Instagram、Facebook 或 WhatsApp。",
+        cardTextLabel: "自定义经文文本",
+        cardThemeLabel: "背景主题",
+        cardDownloadBtn: "下载图片 (PNG)",
+        faqTitle: "关于信仰的常见问题",
+        faqQ1: "joyisgod.com 的核心信息是什么？",
+        faqA1: "Joy in God 致力于用 20 种语言向万国传播耶稣基督的福音。",
+        faqQ2: "我今天该如何与神建立关系？",
+        faqA2: "您现在就可以通过发自内心的祷告，承认耶稣是您的救主，从而接受祂。",
+        faqQ3: "我可以与其它国家的朋友分享这个网站吗？",
+        faqA3: "是的！点击“分享网站”或生成 QR 码，即可通过 WhatsApp、Telegram 或 X 发送。",
+        footerTagline: "通过耶稣基督向世界万国宣告救恩、希望与平安。",
+        footerShareLabel: "全球关注与分享",
         salvationTitle: "决志祷告",
-        salvationPrayer: '"亲爱的天父，我今天来到祢面前，承认我需要祢。我相信耶稣基督是祢的儿子，祂为我的罪钉死在十字架上并复活了。我悔改我的罪，敞开心扉接受耶稣作为我的救主和生命的主。感谢祢赦免我，赐给我永恒的生命。阿们。"'
-      },
-      pt: {
-        badge: "Português",
-        dir: "ltr",
-        heroTitle: "Experimente a Alegria e a Paz Eterna em Jesus Cristo",
-        heroSubtitle: "Bem-vindo ao joyisgod.com. Deus o ama profundamente e tem um propósito milagroso para a sua vida.",
-        verse: '"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não perca, mas tenha a vida eterna."',
-        explanation: "Deus criou a humanidade para viver em comunhão e paz. Através da fé em Jesus Cristo, nossos pecados são perdoados.",
-        salvationTitle: "Oração de Salvação",
-        salvationPrayer: '"Querido Pai Celestial, venho a Ti hoje reconhecendo minha necessidade de Ti. Creio que Jesus Cristo é o Teu Filho, que morreu na cruz pelos meus pecados e ressuscitou. Arrependo-me dos meus pecados e abro meu coração para receber Jesus como meu Senhor e Salvador. Obrigado por me perdoar e me dar a vida eterna hoje. Amém."'
-      },
-      ar: {
-        badge: "العربية",
-        dir: "rtl",
-        heroTitle: "اختبر الفرح والسلام الأبدي في يسوع المسيح",
-        heroSubtitle: "مرحبًا بك في joyisgod.com. الله يحبك عميقًا وله هدف معجزي لحياتك.",
-        verse: '"لأَنَّهُ هكَذَا أَحَبَّ اللهُ الْعَالَمَ حَتَّى بَذَلَ ابْنَهُ الْوَحِيدَ، لِكَيْ لاَ يَهْلِكَ كُلُّ مَنْ يُؤْمِنُ بِهِ، بَلْ تَكُونُ لَهُ الْحَيَاةُ الأَبَدِيَّةُ."',
-        explanation: "خلق الله البشرية لتعيش في سلام وفرح أبدي. من خلال الإيمان بيسوع المسيح، تُغفر خطايانا ونحصل على الخلاص المجاني اليوم.",
-        salvationTitle: "صلاة الخلاص",
-        salvationPrayer: '"أبي السماوي العزيز، آتي إليك اليوم معترفًا بحاجتي إليك. أؤمن أن يسوع المسيح هو ابنك، الذي مات على الصليب من أجل خطاياي وقام من بين الأموات. أتوب عن خطاياي وأفتح قلبي لأقبل يسوع رباً ومخلصاً لحياتي. شكرًا لك على غفران خطاياي وإعطائي الحياة الأبدية اليوم. آمين."'
-      },
-      hi: {
-        badge: "हिन्दी",
-        dir: "ltr",
-        heroTitle: "यीशु मसीह में अनंत आनंद और शांति का अनुभव करें",
-        heroSubtitle: "joyisgod.com पर आपका स्वागत है। ईश्वर आपसे गहरा प्रेम करते हैं और आपके जीवन के लिए एक चमत्कारिक उद्देश्य रखते हैं।",
-        verse: '"क्योंकि परमेश्वर ने जगत से ऐसा प्रेम रखा कि उसने अपना एकलौता पुत्र दे दिया, ताकि जो कोई उस पर विश्वास करे, वह नष्ट न हो, परन्तु अनन्त जीवन पाए।"',
-        explanation: "ईश्वर ने मानवता को शांति और आनंद में रहने के लिए बनाया है। यीशु मसीह में विश्वास के माध्यम से, हमारे पाप क्षमा किए जाते हैं।",
-        salvationTitle: "मुक्ति की प्रार्थना",
-        salvationPrayer: '"प्रिय स्वर्गीय पिता, मैं आज आपकी आवश्यकता को स्वीकार करते हुए आपके पास आता हूँ। मेरा विश्वास है कि यीशु मसीह आपका पुत्र है, जो मेरे पापों के लिए क्रूस पर मरा और फिर जी उठा। मैं अपने पापों से पश्चाताप करता हूँ और यीशु को अपने प्रभु और उद्धारकर्ता के रूप में स्वीकार करता हूँ। मुझे क्षमा करने और अनंत जीवन देने के लिए धन्यवाद। आमीन।"'
-      },
-      ru: {
-        badge: "Русский",
-        dir: "ltr",
-        heroTitle: "Испытайте Вечную Радость и Мир во Иисусе Христе",
-        heroSubtitle: "Добро пожаловать на joyisgod.com. Бог глубоко любит вас и имеет чудесную цель для вашей жизни.",
-        verse: '"Ибо так возлюбил Бог мир, что отдал Сына Своего Единородного, дабы всякий верующий в Него, не погиб, но имел жизнь вечную."',
-        explanation: "Бог создал человечество для жизни в мире и вечной радости. Через веру в Иисуса Христа наши грехи прощаются.",
-        salvationTitle: "Молитва Покаяния",
-        salvationPrayer: '"Дорогой Небесный Отец, я прихожу к Тебе сегодня, сознавая свою нужду в Тебе. Я верю, что Иисус Христос — Твой Сын, Который умер на кресте за мои грехи и воскрес. Я каюсь в своих грехах и открываю свое сердце, чтобы принять Иисуса как своего Господа и Спасителя. Благодарю Тебя за прощение и вечную жизнь. Аминь."'
-      },
-      sw: {
-        badge: "Kiswahili",
-        dir: "ltr",
-        heroTitle: "Pata Furaha na Amani ya Milele Katika Yesu Kristo",
-        heroSubtitle: "Karibu joyisgod.com. Mungu anakupenda sana na ana kusudi la miujiza kwa maisha yako.",
-        verse: '"Kwa maana jinsi hii Mungu aliupenda ulimwengu, hata akamtoa Mwanawe pekee, ili kila mtu amwaminiye asipotee, bali awe na uzima wa milele."',
-        explanation: "Mungu aliumba wanadamu kuishi kwa amani na furaha ya milele. Kwa imani katika Yesu Kristo, tunapokea wokovu wa bure.",
-        salvationTitle: "Ombi la Wokovu",
-        salvationPrayer: '"Mpendwa Baba wa Mbinguni, ninakuja kwako leo nikitambua uhitaji wangu kwako. Ninaamini kwamba Yesu Kristo ni Mwana wako, aliyekufa msalabani kwa ajili ya dhambi zangu na kufufuka. Ninatubu dhambi zangu na kufungua moyo wangu kumpokea Yesu kama Bwana na Mwokozi wangu. Asante kwa kunisamehe na kunipa uzima wa milele leo. Amina."'
-      },
-      de: {
-        badge: "Deutsch",
-        dir: "ltr",
-        heroTitle: "Erleben Sie Ewige Freude und Frieden in Jesus Christus",
-        heroSubtitle: "Willkommen auf joyisgod.com. Gott liebt Sie zutiefst und hat einen wunderbaren Plan für Ihr Leben.",
-        verse: '"Denn also hat Gott die Welt geliebt, dass er seinen eingeborenen Sohn gab, damit alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben."',
-        explanation: "Gott hat die Menschheit geschaffen, um in Frieden und ewiger Freude zu leben. Durch den Glauben an Jesus Christus werden uns die Sünden vergeben.",
-        salvationTitle: "Übergabegebet",
-        salvationPrayer: '"Lieber himmlischer Vater, ich komme heute zu Dir und erkenne, dass ich Dich brauche. Ich glaube, dass Jesus Christus Dein Sohn ist, der für meine Sünden am Kreuz gestorben und auferstanden ist. Ich bereue meine Sünden und öffne mein Herz, um Jesus als meinen Herrn und Erlöser anzunehmen. Danke für die Vergebung und das ewige Leben. Amen."'
-      },
-      ja: {
-        badge: "日本語",
-        dir: "ltr",
-        heroTitle: "イエス・キリストにある永遠の喜びと平安を体験してください",
-        heroSubtitle: "joyisgod.com へようこそ。神はあなたを深く愛しておられ、あなたの人生に素晴らしい目的を持っておられます。",
-        verse: '「神は、波のように深い愛で世を愛されたので、ご自分のひとり子をお与えになった。それは、彼を信じる者が一人も滅びないで、永遠のいのちを得るためである。」',
-        explanation: "神は人間が永遠の平安と喜びの中で生きるために創造されました。イエス・キリストへの信仰を通じて罪が赦されます。",
-        salvationTitle: "救いの祈り",
-        salvationPrayer: '"天の父なる神様、私は今日、あなたが必要であることを認めて御前に進みます。イエス・キリストが私の罪のために十字架で死に、復活されたあなたの御子であることを信じます。私の罪を悔い改め、イエスを私の主、救い主として心にお迎えします。私を赦し、永遠のいのちを与えてくださったことを感謝します。アーメン。"'
-      },
-      ko: {
-        badge: "한국어",
-        dir: "ltr",
-        heroTitle: "예수 그리스도 안에서 영원한 기쁨과 평안을 경험하십시오",
-        heroSubtitle: "joyisgod.com에 오신 것을 환영합니다. 하나님은 당신을 깊이 사랑하시며 삶에 기적적인 목적을 갖고 계십니다.",
-        verse: '"하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라."',
-        explanation: "하나님은 인간이 영원한 평안과 기쁨 속에서 살도록 창조하셨습니다. 예수 그리스도를 믿음으로 구원을 받습니다.",
-        salvationTitle: "영접 기도",
-        salvationPrayer: '"사랑하는 하늘 아버지, 저는 오늘 주님이 필요함을 인정하며 나아갑니다. 예수 그리스도가 내 죄를 위해 십자가에서 죽으시고 부활하신 하나님의 아들이심을 믿습니다. 내 죄를 회개하고 예수를 내 삶의 주와 구주로 모셔듭니다. 나를 용서하시고 영생을 주심에 감사드립니다. 아멘."'
-      },
-      id: {
-        badge: "Bahasa Indonesia",
-        dir: "ltr",
-        heroTitle: "Rasakan Sukacita dan Damai Sejahtera Kekal dalam Yesus Kristus",
-        heroSubtitle: "Selamat datang di joyisgod.com. Tuhan sangat mengasihi Anda dan memiliki rencana ajaib dalam hidup Anda.",
-        verse: '"Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal."',
-        explanation: "Tuhan menciptakan manusia untuk hidup dalam persekutuan dan damai kekal. Melalui iman kepada Yesus Kristus, dosa kita diampuni.",
-        salvationTitle: "Doa Keselamatan",
-        salvationPrayer: '"Bapa Surgawi yang dikasihi, saya datang kepada-Mu hari ini mengakui kebutuhan saya akan Engkau. Saya percaya bahwa Yesus Kristus adalah Putra-Mu, yang telah mati di kayu salib demi dosa-dosa saya dan bangkit kembali. Saya bertobat dari dosa-dosa saya dan membuka hati saya untuk menerima Yesus sebagai Tuhan dan Juruselamat saya. Terima kasih telah mengampuni saya dan memberi saya kehidupan kekal hari ini. Amin."'
-      },
-      vi: {
-        badge: "Tiếng Việt",
-        dir: "ltr",
-        heroTitle: "Trải Nghiệm Niềm Vui và Sự Bình An Đời Đời Trong Chúa Giê-xu",
-        heroSubtitle: "Chào mừng bạn đến với joyisgod.com. Đức Chúa Trời yêu thương bạn sâu sắc và có mục đích diệu kỳ cho cuộc đời bạn.",
-        verse: '"Vì Đức Chúa Trời yêu thương thế gian đến nỗi đã賜 Con một của Ngài, hầu cho hễ ai tin Con ấy không bị hư mất mà được sự sống đời đời."',
-        explanation: "Đức Chúa Trời tạo dựng con người để sống trong sự bình an và niềm vui đời đời. Qua đức tin nơi Chúa Giê-xu, tội lỗi chúng ta được tha thứ.",
-        salvationTitle: "Lời Cầu Nguyện Tiếp Nhận Chúa",
-        salvationPrayer: '"Kính lẫy Cha Thiên Đàng, hôm nay con đến với Ngài và thừa nhận con cần Ngài. Con tin rằng Chúa Giê-xu là Con Đức Chúa Trời, Đấng đã chết trên cây thập tự vì tội lỗi con và đã sống lại. Con ăn ăn tội lỗi mình và mở lòng tiếp nhận Chúa Giê-xu làm Cứu Chúa của đời con. Cảm ơn Ngài đã tha thứ và ban cho con sự sống đời đời hôm nay. Amen."'
-      },
-      tr: {
-        badge: "Türkçe",
-        dir: "ltr",
-        heroTitle: "İsa Mesih'te Sonsuz Sevinç ve Esenliği Deneyimleyin",
-        heroSubtitle: "joyisgod.com'a hoş geldiniz. Tanrı sizi derin bir sevgiyle seviyor ve yaşamınız için mucizevi bir plana sahip.",
-        verse: '"Çünkü Tanrı dünyayı o kadar çok sevdi ki, biricik Oğlunu verdi; öyle ki, O\'na iman edenlerin hiçbiri mahvolmasın, hepsi sonsuz yaşama kavuşsun."',
-        explanation: "Tanrı insanlığı sonsuz esenlik ve sevinç içinde yaşaması için yarattı. İsa Mesih'e iman ederek günahlarımız bağışlanır.",
-        salvationTitle: "Kurtuluş Duası",
-        salvationPrayer: '"Sevgili Göklerdeki Babamız, bugün Sana olan ihtiyacımı kabul ederek huzuruna geliyorum. İsa Mesih\'in Günahlarım için çarmıhta ölen ve dirilen Senin Oğlun olduğuna inanıyorum. Günahlarımdan tövbe ediyor ve İsa\'yı Rabbim ve Kurtarıcım olarak kabul etmek için yüreğimi açıyorum. Beni bağışladığın ve bana sonsuz yaşam verdiğin için teşekkür ederim. Amin."'
-      },
-      it: {
-        badge: "Italiano",
-        dir: "ltr",
-        heroTitle: "Sperimenta la Gioia e la Pace Eterna in Gesù Cristo",
-        heroSubtitle: "Benvenuto su joyisgod.com. Dio ti ama profondamente e ha un piano miracoloso per la tua vita.",
-        verse: '"Poiché Dio ha tanto amato il mondo che ha dato il suo unico Figlio, affinché chiunque crede in lui non perisca, ma abbia vita eterna."',
-        explanation: "Dio ha creato l'umanità per vivere in pace e gioia eterna. Attraverso la fede in Gesù Cristo, i nostri peccati sono perdonati.",
-        salvationTitle: "Preghiera di Salvezza",
-        salvationPrayer: '"Caro Padre Celeste, vengo a Te oggi riconoscendo il mio bisogno di Te. Credo che Gesù Cristo sia Tuo Figlio, morto sulla croce per i miei peccati e risorto. Mi pento dei miei peccati e apro il mio cuore per accogliere Gesù come mio Signore e Salvatore. Grazie per avermi perdonato e per avermi donato la vita eterna oggi. Amen."'
-      },
-      tl: {
-        badge: "Tagalog",
-        dir: "ltr",
-        heroTitle: "Maranasan ang Walang Hanggang Kagalakan at Kapayapaan kay Hesukristo",
-        heroSubtitle: "Maligayang pagdating sa joyisgod.com. Mahal ka ng Diyos at may magandang layunin Siya para sa iyong buhay.",
-        verse: '"Sapagkat ganun na lamang ang pag-ibig ng Diyos sa sanlibutan na ibinigay Niya ang Kanyang kaisa-isang Anak, upang ang sinumang sumampalataya sa Kanya ay hindi mapahamak kundi magkaroon ng buhay na walang hanggan."',
-        explanation: "Nilikha ng Diyos ang tao upang mabuhay sa kapayapaan at kagalakan. Sa pamamagitan ng pananampalataya kay Hesukristo, tayo ay napapatawad.",
-        salvationTitle: "Panalangin ng Kaligtasan",
-        salvationPrayer: '"Mahal na Ama sa Langit, lumalapit ako sa Inyo ngayon na kinikilala ang aking pangangailangan sa Inyo. Naniniwala ako na si Hesukristo ay Inyong Anak na namatay sa krus para sa aking mga kasalanan at muling nabuhay. Nagsisisi ako sa aking mga kasalanan at binubuksan ko ang aking puso upang tanggapin si Hesus bilang aking Panginoon at Tagapagligtas. Salamat sa pagpapatawad at pagbibigay sa akin ng buhay na walang hanggan. Amen."'
-      },
-      bn: {
-        badge: "বাংলা",
-        dir: "ltr",
-        heroTitle: "যীশু খ্রীষ্টে অনন্ত আনন্দ এবং শান্তির অভিজ্ঞতা অর্জন করুন",
-        heroSubtitle: "joyisgod.com-এ স্বাগতম। ঈশ্বর আপনাকে গভীর ভালোবাসেন এবং আপনার জীবনের জন্য একটি অলৌকিক উদ্দেশ্য রয়েছে।",
-        verse: '"কারণ ঈশ্বর জগতকে এমন প্রেম করিলেন যে, আপনার একজাত পুত্রকে দান করিলেন, যেন যে কেহ তাঁহাতে বিশ্বাস করে, সে বিনষ্ট না হয়, কিন্তু অনন্ত জীবন পায়।"',
-        explanation: "ঈশ্বর মানবজাতিকে অনন্ত শান্তি ও আনন্দে বাস করার জন্য সৃষ্টি করেছেন। যীশু খ্রীষ্টে বিশ্বাসের মাধ্যমে আমাদের পাপ ক্ষমা করা হয়।",
-        salvationTitle: "মুক্তি অর্জনের প্রার্থনা",
-        salvationPrayer: '"প্রিয় স্বর্গীয় পিতা, আমি আজ আপনার প্রয়োজনীয়তা স্বীকার করে আপনার কাছে আসছি। আমি বিশ্বাস করি যে যীশু খ্রীষ্ট আপনার পুত্র, যিনি আমার পাপের জন্য ক্রুশে মারা গিয়েছিলেন এবং পুনরায় জীবিত হয়েছিলেন। আমি আমার পাপের জন্য অনুতপ্ত এবং যীশুকে আমার প্রভু ও ত্রাণকর্তা হিসাবে গ্রহণ করার জন্য আমার হৃদয় খুলে দিচ্ছি। আমাকে ক্ষমা করার এবং অনন্ত জীবন দেওয়ার জন্য আপনাকে ধন্যবাদ। আমেন।"'
-      },
-      ur: {
-        badge: "اردو",
-        dir: "rtl",
-        heroTitle: "یسوع مسیح میں ابدی خوشی اور سلامتی کا تجربہ کریں",
-        heroSubtitle: "joyisgod.com پر خوش آمدید۔ خدا آپ سے بے حد محبت کرتا ہے اور آپ کی زندگی کے لیے ایک معجزانہ مقصد رکھتا ہے۔",
-        verse: '"کیونکہ خدا نے دنیا سے ایسا پیار کیا کہ اس نے اپنا اکلوتا بیٹا بخش دیا تاکہ جو کوئی اس پر ایمان لائے ہلاک نہ ہو بلکہ ابدی زندگی پائے۔"',
-        explanation: "خدا نے انسان کو ابدی سلامتی اور خوشی میں رہنے کے لیے پیدا کیا۔ یسوع مسیح پر ایمان لانے سے ہمارے گناہ معاف ہوتے ہیں۔",
-        salvationTitle: "نجات کی دعا",
-        salvationPrayer: '"پیارے آسمانی باپ، میں آج تیری ضرورت کا اعتراف کرتے ہوئے تیرے پاس آتا ہوں۔ میں ایمان رکھتا ہوں کہ یسوع مسیح تیرا بیٹا ہے جو میرے گناہوں کی خاطر صلیب پر مویا اور جی اٹھا۔ میں اپنے گناہوں سے توبہ کرتا ہوں اور یسوع کو اپنا خداوند اور نجات دہندہ قبول کرتا ہوں۔ مجھے معاف کرنے اور ابدی زندگی دینے کا شکریہ۔ آمین۔"'
-      },
-      pl: {
-        badge: "Polski",
-        dir: "ltr",
-        heroTitle: "Doświadcz Wiecznej Radości i Pokoju w Jezusie Chrystusie",
-        heroSubtitle: "Witamy na joyisgod.com. Bóg głęboko Cię kocha i ma cudowny plan dla Twojego życia.",
-        verse: '"Tak bowiem Bóg umiłował świat, że Syna swego jednorodzonego dał, aby każdy, kto w Niego wierzy, nie zginął, ale miał życie wieczne."',
-        explanation: "Bóg stworzył ludzkość, aby żyła w pokoju i wiecznej radości. Przez wiarę w Jezusa Chrystusa nasze grzechy zostają odpuszczone.",
-        salvationTitle: "Modlitwa Zbawienia",
-        salvationPrayer: '"Drogi Ojcze Niebieski, przychodzę dziś do Ciebie, uznając moją potrzebę Ciebie. Wierzę, że Jezus Chrystus jest Twoim Synem, który umarł na krzyżu za moje grzechy i zmartwychwstał. Żałuję za moje grzechy i otwieram serce, aby przyjąć Jezusa jako mojego Pana i Zbawiciela. Dziękuję za przebaczenie i życie wieczne. Amen."'
+        salvationSubtitle: "用您的母语接受耶稣",
+        salvationPrayer: '"亲爱的天父，我今天来到祢面前，承认我需要祢。我相信耶稣基督是祢的儿子，祂为我的罪钉死在十字架上并复活了。我悔改我的罪，敞开心扉接受耶稣作为我的救主和生命的主。感谢祢赦免我，赐给我永恒的生命。阿们。"',
+        modalConfirmBtn: "我今天作了这个祷告！",
+        modalConfirmMsg: "哈利路亚！欢迎加入神的大家庭！天堂今天为您的决定感到欢喜。",
+        shareModalTitle: "分享 Joy in God",
+        shareModalSubtitle: "扫描二维码或复制链接以进行全球分享",
+        shareNativeBtn: "通过应用分享",
+        shareCopyBtn: "复制网站链接 (www.joyisgod.com)"
       }
     };
 
+    // 3. LANGUAGE SWITCHER CONTROLLER
     let currentLangKey = 'en';
 
     function switchLanguage(langKey) {
-      if (!translations[langKey]) return;
+      const data = translations[langKey] || translations.en;
       currentLangKey = langKey;
-      const data = translations[langKey];
 
-      // Update HTML Text Direction for RTL (Arabic, Urdu)
       document.documentElement.dir = data.dir || 'ltr';
 
-      // Update UI Language Tab active states
       document.querySelectorAll('.lang-tab').forEach(tab => {
         tab.classList.remove('bg-indigo-600', 'text-white');
         tab.classList.add('bg-slate-100', 'text-slate-700');
@@ -758,24 +798,84 @@
         activeTab.classList.add('bg-indigo-600', 'text-white');
       }
 
-      // Sync Mobile Dropdown Selector
       const dropdown = document.getElementById('language-select-dropdown');
       if (dropdown) dropdown.value = langKey;
 
-      // Update Main Gospel View
-      document.getElementById('selected-lang-badge').textContent = data.badge;
-      document.getElementById('hero-title').textContent = data.heroTitle;
-      document.getElementById('hero-subtitle').textContent = data.heroSubtitle;
-      document.getElementById('gospel-verse').textContent = data.verse;
-      document.getElementById('gospel-explanation').innerHTML = `<p>${data.explanation}</p>`;
+      // Update Text Elements
+      const setEl = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val) el.textContent = val;
+      };
+      const setHtml = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val) el.innerHTML = val;
+      };
 
-      // Update Salvation Modal Content
-      document.getElementById('modal-prayer-title').textContent = data.salvationTitle;
-      document.getElementById('modal-prayer-box').textContent = data.salvationPrayer;
-      document.getElementById('modal-prayer-box').setAttribute('dir', data.dir || 'ltr');
+      setEl('nav-pray-btn', data.navPray);
+      setEl('nav-pray-btn-mobile', data.navPray);
+      setEl('nav-share-btn', data.navShare);
+      setEl('hero-visit-label', data.heroVisitLabel);
+      setEl('hero-title', data.heroTitle);
+      setEl('hero-subtitle', data.heroSubtitle);
+      setEl('hero-salvation-btn', data.heroSalvationBtn);
+      setEl('hero-share-btn', data.heroShareBtn);
+      setEl('lang-section-title', data.langTitle);
+      setEl('lang-section-subtitle', data.langSubtitle);
+      setEl('lang-dropdown-label', data.dropdownLabel);
+      setEl('selected-lang-badge', data.badge);
+      setEl('gospel-verse', data.verse);
+      setHtml('gospel-explanation', `<p>${data.explanation}</p>`);
+      setEl('gospel-pray-cta', data.gospelPrayCta);
+      setEl('gospel-copy-btn', data.gospelCopyBtn);
+
+      setEl('gen-title', data.genTitle);
+      setEl('gen-subtitle', data.genSubtitle);
+      setEl('topic-btn-peace', data.btnPeace);
+      setEl('topic-btn-hope', data.btnHope);
+      setEl('topic-btn-love', data.btnLove);
+      setEl('topic-btn-salvation', data.btnSalvation);
+      setEl('gen-copy-btn', data.genCopy);
+
+      setEl('quiz-badge', data.quizBadge);
+      setEl('quiz-title', data.quizTitle);
+      setEl('quiz-subtitle', data.quizSubtitle);
+      setEl('quiz-question', data.quizQ);
+      setEl('quiz-opt-0', data.quizA0);
+      setEl('quiz-opt-1', data.quizA1);
+      setEl('quiz-opt-2', data.quizA2);
+
+      setEl('card-title', data.cardTitle);
+      setEl('card-subtitle', data.cardSubtitle);
+      setEl('card-label-text', data.cardTextLabel);
+      setEl('card-label-theme', data.cardThemeLabel);
+      setEl('card-download-btn', data.cardDownloadBtn);
+
+      setEl('faq-title', data.faqTitle);
+      setEl('faq-q1', data.faqQ1);
+      setEl('faq-a1', data.faqA1);
+      setEl('faq-q2', data.faqQ2);
+      setEl('faq-a2', data.faqA2);
+      setEl('faq-q3', data.faqQ3);
+      setEl('faq-a3', data.faqA3);
+
+      setEl('footer-tagline', data.footerTagline);
+      setEl('footer-share-label', data.footerShareLabel);
+
+      setEl('modal-prayer-title', data.salvationTitle);
+      setEl('modal-prayer-subtitle', data.salvationSubtitle);
+      setEl('modal-prayer-box', data.salvationPrayer);
+      const prayBox = document.getElementById('modal-prayer-box');
+      if (prayBox) prayBox.setAttribute('dir', data.dir || 'ltr');
+      setEl('modal-confirm-btn', data.modalConfirmBtn);
+      setHtml('salvation-confirmation-message', data.modalConfirmMsg);
+
+      setEl('share-modal-title', data.shareModalTitle);
+      setEl('share-modal-subtitle', data.shareModalSubtitle);
+      setEl('share-native-btn', data.shareNativeBtn);
+      setEl('share-copy-btn', data.shareCopyBtn);
     }
 
-    // 3. SALVATION MODAL CONTROLLER
+    // 4. MODAL CONTROLLERS
     function openSalvationModal() {
       document.getElementById('salvation-modal').classList.remove('hidden');
     }
@@ -783,15 +883,12 @@
       document.getElementById('salvation-modal').classList.add('hidden');
     }
     function confirmSalvationDecision() {
-      const msg = document.getElementById('salvation-confirmation-message');
-      msg.classList.remove('hidden');
+      document.getElementById('salvation-confirmation-message').classList.remove('hidden');
     }
 
-    // 4. SHARE & QR CODE MODAL CONTROLLER
     function openShareModal() {
       const modal = document.getElementById('share-modal');
       modal.classList.remove('hidden');
-      
       const qrContainer = document.getElementById('qrcode-container');
       qrContainer.innerHTML = '';
       if (typeof QRCode !== 'undefined') {
@@ -829,28 +926,28 @@
 
     function copyCurrentVerse() {
       const verse = document.getElementById('gospel-verse').textContent;
-      navigator.clipboard.writeText(verse + " - https://www.joyisgod.com").then(() => {
+      navigator.clipboard.writeText(verse + " — https://www.joyisgod.com").then(() => {
         alert('Scripture verse copied to clipboard!');
       });
     }
 
-    // 5. SCRIPTURE GENERATOR DATABASE & LOGIC
+    // 5. SCRIPTURE GENERATOR DATABASE
     const verseDatabase = {
       peace: [
         { text: '"Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid."', ref: '— John 14:27' },
-        { text: '"You will keep in perfect peace those whose minds are steadfast, because they trust in you."', ref: '— Isaiah 26:3' }
+        { text: '"You will keep in perfect peace those whose minds are steadfast, because they trust in You."', ref: '— Isaiah 26:3' }
       ],
       hope: [
         { text: '"For I know the plans I have for you," declares the LORD, "plans to prosper you and not to harm you, plans to give you hope and a future."', ref: '— Jeremiah 29:11' },
-        { text: '"May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit."', ref: '— Romans 15:13' }
+        { text: '"May the God of hope fill you with all joy and peace as you trust in Him, so that you may overflow with hope by the power of the Holy Spirit."', ref: '— Romans 15:13' }
       ],
       love: [
         { text: '"Greater love has no one than this: to lay down one’s life for one’s friends."', ref: '— John 15:13' },
         { text: '"See what great love the Father has lavished on us, that we should be called children of God!"', ref: '— 1 John 3:1' }
       ],
       salvation: [
-        { text: '"If you declare with your mouth, "Jesus is Lord," and believe in your heart that God raised him from the dead, you will be saved."', ref: '— Romans 10:9' },
-        { text: '"For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God."', ref: '— Ephesians 2:8' }
+        { text: '"If you declare with your mouth, "Jesus is Lord," and believe in your heart that God raised Him from the dead, you will be saved."', ref: '— Romans 10:9' },
+        { text: '"For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God."', ref: '— Ephesians 2:8–9' }
       ]
     };
 
@@ -874,18 +971,19 @@
     // 6. FAITH QUIZ LOGIC
     function checkQuiz(selectedIndex) {
       const feedback = document.getElementById('quiz-feedback');
+      const langData = translations[currentLangKey] || translations.en;
       feedback.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-900', 'bg-rose-100', 'text-rose-900');
       
       if (selectedIndex === 1) {
         feedback.classList.add('bg-emerald-100', 'text-emerald-900');
-        feedback.innerHTML = '<strong>Correct!</strong> Salvation is a free gift received through grace and faith in Jesus Christ, not by human deeds alone (Ephesians 2:8-9).';
+        feedback.innerHTML = langData.quizCorrect;
       } else {
         feedback.classList.add('bg-rose-100', 'text-rose-900');
-        feedback.innerHTML = '<strong>Not quite.</strong> The Bible teaches that salvation is a free gift of God\'s grace through faith in Jesus Christ, rather than human works alone.';
+        feedback.innerHTML = langData.quizIncorrect;
       }
     }
 
-    // 7. CANVAS SCRIPTURE CARD BUILDER LOGIC
+    // 7. CANVAS CARD BUILDER LOGIC
     let currentTheme = 'indigo';
 
     function setCardTheme(theme) {
@@ -899,7 +997,6 @@
       const ctx = canvas.getContext('2d');
       const text = document.getElementById('card-text-input').value || "Joy in God";
 
-      // Background Color Themes
       let bgGrad;
       if (currentTheme === 'amber') {
         bgGrad = ctx.createLinearGradient(0, 0, 500, 500);
@@ -922,7 +1019,6 @@
       ctx.fillStyle = bgGrad;
       ctx.fillRect(0, 0, 500, 500);
 
-      // Decorative Cross Graphic
       ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
       ctx.lineWidth = 6;
       ctx.beginPath();
@@ -932,7 +1028,6 @@
       ctx.lineTo(290, 80);
       ctx.stroke();
 
-      // Render Text Wrap
       ctx.fillStyle = '#ffffff';
       ctx.font = '24px Georgia, serif';
       ctx.textAlign = 'center';
@@ -954,7 +1049,6 @@
       }
       ctx.fillText(line, 250, y);
 
-      // Watermark Branding
       ctx.fillStyle = '#fbbf24';
       ctx.font = 'bold 16px sans-serif';
       ctx.fillText('www.joyisgod.com', 250, 440);
@@ -975,19 +1069,7 @@
       menu.classList.toggle('hidden');
     }
 
-    // 9. SERVICE WORKER REGISTRATION FOR PWA SUPPORT
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        const swBlob = new Blob([`
-          self.addEventListener('fetch', function(event) {
-            event.respondWith(fetch(event.request));
-          });
-        `], { type: 'text/javascript' });
-        navigator.serviceWorker.register(URL.createObjectURL(swBlob)).catch(() => {});
-      });
-    }
-
-    // INITIALIZATION ON WINDOW LOAD
+    // INITIALIZATION
     window.addEventListener('DOMContentLoaded', () => {
       initVisitorCounter();
       switchLanguage('en');
