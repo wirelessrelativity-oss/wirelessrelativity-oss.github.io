@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
-    <!-- Primary SEO Meta Tags -->
-    <title>Joy Is God - Finding Hope, Peace, Strength & Salvation in Jesus Christ</title>
-    <meta name="description" content="Discover true, lasting joy and peace through faith in Jesus Christ. Explore Bible verses for anxiety, hope, strength, and eternal salvation. Available in English, Español, Français, and 中文.">
-    <meta name="keywords" content="Joy Is God, Bible verses for hope, peace in Jesus Christ, salvation prayer, Christian faith, Bible verses for strength, how to accept Jesus">
+    <!-- Primary SEO Meta Tags Focused on Salvation and Hope -->
+    <title>Joy Is God - Accept Jesus Christ & Be Born Again Today</title>
+    <meta name="description" content="Receive salvation and eternal life through Jesus Christ. Say the prayer of salvation today, be born again, and find hope, peace, and strength in any trial.">
+    <meta name="keywords" content="salvation prayer, accept Jesus Christ, born again prayer, prayer to accept Jesus, Christian salvation, find hope in God, Joy Is God">
     <link rel="canonical" href="https://www.joyisgod.com/">
 
     <!-- Hreflang Tags for Global SEO -->
@@ -17,53 +18,41 @@
     <link rel="alternate" hreflang="zh" href="https://www.joyisgod.com/?lang=zh" />
     <link rel="alternate" hreflang="x-default" href="https://www.joyisgod.com/" />
 
-    <!-- Open Graph / Facebook / WhatsApp Preview Meta Tags -->
+    <!-- Open Graph / Social Sharing Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.joyisgod.com/">
-    <meta property="og:title" content="Joy Is God - Eternal Hope, Peace & Salvation">
-    <meta property="og:description" content="Discover unshakeable peace and eternal joy through a relationship with God and Jesus Christ.">
+    <meta property="og:title" content="Joy Is God - Receive Salvation & Eternal Life in Jesus Christ">
+    <meta property="og:description" content="Are you looking for peace, hope, or forgiveness? Accept Jesus Christ as your Savior today and experience the joy of being born again.">
     <meta property="og:site_name" content="Joy Is God">
+    <meta property="og:image" content="https://www.joyisgod.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.joyisgod.com/">
-    <meta name="twitter:title" content="Joy Is God - Hope, Peace & Salvation in Jesus Christ">
-    <meta name="twitter:description" content="Find encouragement, scripture, and salvation through faith in Jesus Christ.">
+    <meta name="twitter:title" content="Joy Is God - Accept Jesus Christ & Be Born Again">
+    <meta name="twitter:description" content="Pray the salvation prayer, receive forgiveness, and discover new life in Jesus Christ.">
+    <meta name="twitter:image" content="https://www.joyisgod.com/og-image.jpg">
 
-    <!-- JSON-LD Structured Data for Google Rich Snippets -->
+    <!-- Structured Data for Google Rich Snippets -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Joy Is God",
-      "url": "https://www.joyisgod.com/",
-      "description": "An international platform dedicated to sharing hope, biblical truth, and salvation in Jesus Christ.",
-      "inLanguage": ["en", "es", "fr", "zh"]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Who is Jesus Christ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Jesus Christ is the Son of God, fully divine and fully human, who came to earth to offer forgiveness, salvation, and eternal life to all who believe in Him."
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.joyisgod.com/#website",
+          "url": "https://www.joyisgod.com/",
+          "name": "Joy Is God",
+          "description": "Sharing the Gospel of Jesus Christ and leading individuals into a born-again relationship with God.",
+          "inLanguage": ["en", "es", "fr", "zh"]
         }
-      }, {
-        "@type": "Question",
-        "name": "How can I accept Jesus Christ as my Savior?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can accept Jesus by acknowledging your need for God, believing that Jesus died on the cross for your sins and rose again, and confessing Him as your Lord through prayer."
-        }
-      }]
+      ]
     }
     </script>
 
-    <!-- Typography -->
+    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -79,6 +68,7 @@
             --card-border: rgba(255, 255, 255, 0.1);
             --accent-green: #34d399;
             --accent-blue: #60a5fa;
+            --accent-rose: #f43f5e;
         }
 
         * {
@@ -104,12 +94,11 @@
             transform: translateX(-50%);
             width: 850px;
             height: 850px;
-            background: radial-gradient(circle, rgba(243, 198, 105, 0.12) 0%, rgba(59, 130, 246, 0.08) 45%, rgba(0,0,0,0) 70%);
+            background: radial-gradient(circle, rgba(243, 198, 105, 0.15) 0%, rgba(52, 211, 153, 0.08) 45%, rgba(0,0,0,0) 70%);
             filter: blur(90px);
             z-index: -1;
             animation: pulseGlow 12s ease-in-out infinite alternate;
             pointer-events: none;
-            will-change: transform;
         }
 
         @keyframes pulseGlow {
@@ -118,7 +107,7 @@
         }
 
         nav {
-            background: rgba(10, 9, 16, 0.7);
+            background: rgba(10, 9, 16, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--card-border);
@@ -129,14 +118,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 0.85rem 2rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .nav-left {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
         }
 
         .logo {
@@ -146,12 +127,6 @@
             color: var(--accent-gold);
             text-decoration: none;
             letter-spacing: 0.05em;
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
         }
 
         .lang-selector select {
@@ -167,31 +142,26 @@
 
         header {
             text-align: center;
-            padding: 4.5rem 1.5rem 3rem 1.5rem;
+            padding: 2rem 1.5rem 1rem 1.5rem;
         }
 
-        header h1 {
+        .hero-title {
             font-family: 'Cinzel', serif;
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            background: linear-gradient(135deg, #ffffff 30%, var(--accent-gold) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 0.75rem;
-            text-shadow: 0 0 35px var(--accent-glow);
+            font-size: 2.2rem;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
         }
 
-        header p {
-            font-size: 1.2rem;
+        .hero-subtitle {
+            font-size: 1.15rem;
             color: var(--text-muted);
-            font-weight: 300;
-            letter-spacing: 0.03em;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         main {
             max-width: 850px;
-            margin: 0 auto 3rem auto;
+            margin: 1.5rem auto 3rem auto;
             padding: 0 1.5rem;
         }
 
@@ -204,13 +174,27 @@
             padding: 2.5rem;
             margin-bottom: 2rem;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
         .content-card:hover {
             transform: translateY(-3px);
             border-color: rgba(243, 198, 105, 0.3);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+        }
+
+        .salvation-primary {
+            border: 2px solid var(--accent-green);
+            background: rgba(52, 211, 153, 0.04);
+            box-shadow: 0 0 30px rgba(52, 211, 153, 0.15);
+        }
+
+        .salvation-primary h2 {
+            color: var(--accent-green);
+        }
+
+        .crisis-card {
+            border-left: 4px solid var(--accent-rose);
+            background: rgba(244, 63, 94, 0.03);
         }
 
         .votd-card {
@@ -220,7 +204,6 @@
             border-radius: 18px;
             padding: 2rem 2.5rem;
             margin-bottom: 2rem;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
 
         .votd-card h2 {
@@ -237,14 +220,12 @@
             font-size: 1.15rem;
             color: #ffffff;
             margin-bottom: 0.75rem;
-            line-height: 1.6;
         }
 
         .votd-ref {
             text-align: right;
             font-weight: 700;
             color: var(--accent-gold);
-            font-size: 1rem;
         }
 
         h2 {
@@ -280,24 +261,16 @@
             margin-bottom: 0.75rem;
         }
 
-        .salvation-section {
-            border-left: 4px solid var(--accent-green);
-            background: rgba(52, 211, 153, 0.03);
-        }
-        
-        .theology-section {
-            border-top: 4px solid var(--accent-blue);
-        }
-
         .prayer-box {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(52, 211, 153, 0.3);
-            padding: 1.75rem;
-            border-radius: 12px;
-            font-style: italic;
+            background: rgba(10, 9, 16, 0.7);
+            border: 2px dashed var(--accent-green);
+            padding: 2rem;
+            border-radius: 14px;
+            font-size: 1.1rem;
+            line-height: 1.9;
             margin: 1.5rem 0;
-            color: #f0eef5;
-            box-shadow: inset 0 0 15px rgba(52, 211, 153, 0.05);
+            color: #ffffff;
+            box-shadow: inset 0 0 20px rgba(52, 211, 153, 0.1);
         }
 
         .verse-box {
@@ -309,16 +282,8 @@
             font-style: italic;
             color: #fff;
         }
-        
-        .grid-layout {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
 
         .share-card {
-            background: rgba(255, 255, 255, 0.02);
             text-align: center;
         }
 
@@ -334,28 +299,28 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.65rem 1.25rem;
+            padding: 0.65rem 1.15rem;
             border-radius: 30px;
             color: white;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-size: 0.85rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
         }
 
         .share-btn:hover {
             transform: translateY(-2px) scale(1.03);
-            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.4);
         }
 
         .btn-facebook { background-color: #1877f2; }
-        .btn-twitter { background-color: #2b2b2b; border: 1px solid #444; }
+        .btn-twitter { background-color: #000000; border: 1px solid #444; }
         .btn-whatsapp { background-color: #25d366; }
         .btn-telegram { background-color: #229ed9; }
         .btn-reddit { background-color: #ff4500; }
         .btn-pinterest { background-color: #e60023; }
-        .btn-email { background-color: #4b5563; }
+        .btn-linkedin { background-color: #0a66c2; }
 
         footer {
             text-align: center;
@@ -373,14 +338,10 @@
             display: block;
         }
 
-        @media (max-width: 768px) {
-            .grid-layout { grid-template-columns: 1fr; }
-        }
-        
         @media (max-width: 600px) {
-            header h1 { font-size: 2.2rem; }
             .content-card, .votd-card { padding: 1.5rem; }
-            nav { padding: 0.75rem 1rem; }
+            .hero-title { font-size: 1.8rem; }
+            .share-btn { padding: 0.55rem 0.9rem; font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -388,380 +349,212 @@
 
     <div class="ambient-light"></div>
 
-    <!-- Navigation & Language Selector Bar -->
+    <!-- Top Navigation -->
     <nav>
-        <div class="nav-left">
-            <a href="#" class="logo">Joy Is God</a>
-        </div>
-        <div class="nav-right">
-            <div class="lang-selector">
-                <label for="languageSelect" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-right: 0.3rem;">🌐</label>
-                <select id="languageSelect" onchange="changeLanguage(this.value)">
-                    <option value="en" selected>English</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                    <option value="zh">中文</option>
-                </select>
-            </div>
+        <a href="https://www.joyisgod.com/" class="logo">Joy Is God</a>
+        <div class="lang-selector">
+            <label for="languageSelect" aria-label="Select Language">🌐</label>
+            <select id="languageSelect" onchange="changeLanguage(this.value)">
+                <option value="en" selected>English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="zh">中文</option>
+            </select>
         </div>
     </nav>
 
-    <!-- Header Section -->
+    <!-- Hero Header -->
     <header>
-        <h1>JOY IS GOD</h1>
-        <p>Anchoring your heart in His eternal hope, grace, and truth.</p>
+        <h1 class="hero-title">Be Born Again in Jesus Christ</h1>
+        <p class="hero-subtitle">No matter what burden, crisis, or trial you are facing today, Jesus Christ loves you and offers you immediate forgiveness, peace, and eternal life.</p>
     </header>
 
     <main>
-        <!-- Dynamic Verse of the Day Card -->
-        <section class="votd-card">
+        <!-- Verse of the Day -->
+        <section class="votd-card" aria-label="Verse of the Day">
             <h2 id="votd-heading">Verse of the Day</h2>
             <blockquote id="votd-text" class="votd-text">"Loading today's verse..."</blockquote>
             <p id="votd-ref" class="votd-ref">— Loading</p>
         </section>
 
         <!-- ================= ENGLISH ================= -->
-        <div id="content-en" class="lang-content active">
-            <section class="content-card">
-                <h2>Welcome to Joy Is God</h2>
-                <p>True joy is not a temporary feeling tied to shifting circumstances—it is a steadfast, unshakeable gift rooted in the character of God and realized through a personal relationship with Jesus Christ. No matter where you are on your spiritual journey, you are welcome here.</p>
-                <div class="verse-box">
-                    "May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit." <br><strong>— Romans 15:13</strong>
-                </div>
-            </section>
-
-            <!-- Expanded Scripture Topics for SEO Traffic -->
-            <section class="content-card">
-                <h2>Promises of Hope, Peace & Strength</h2>
-                <p>Explore timeless biblical truths that offer comfort during life's trials and deepen your connection with God:</p>
-                <div class="verse-box">
-                    "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid." <br><strong>— John 14:27</strong>
-                </div>
-                <div class="verse-box">
-                    "Do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand." <br><strong>— Isaiah 41:10</strong>
-                </div>
-                <div class="verse-box">
-                    "Cast all your anxiety on him because he cares for you." <br><strong>— 1 Peter 5:7</strong>
-                </div>
-            </section>
-
-            <section class="content-card theology-section">
-                <h2>Who is Jesus Christ?</h2>
-                <p>Jesus is the central figure of human history and the foundation of the Christian faith. He is not merely a prophet or a good teacher; the Bible reveals Him as the Son of God, fully divine and fully human.</p>
-                <div class="grid-layout">
-                    <div>
-                        <h3>He is the Savior</h3>
-                        <p>Jesus came to earth with a specific mission: to seek and to save the lost. He willingly took the punishment for our sins upon Himself on the cross, offering us forgiveness and a pathway back to God.</p>
-                    </div>
-                    <div>
-                        <h3>He Conquered Death</h3>
-                        <p>The grave could not hold Him. Three days after His crucifixion, Jesus rose from the dead, proving His power over sin and death and offering eternal life to all who believe in Him.</p>
-                    </div>
-                </div>
-                <div class="verse-box">
-                    "Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'" <br><strong>— John 14:6</strong>
-                </div>
-            </section>
-
-            <section class="content-card">
-                <h2>The Character of God</h2>
-                <p>To find true joy, we must know the One who gives it. The Bible teaches us several foundational truths about who God is:</p>
-                <ul>
-                    <li><strong>God is Love:</strong> His love for you is unconditional and eternal. It does not depend on your performance, but on His perfect nature. (1 John 4:8)</li>
-                    <li><strong>God is Faithful:</strong> Even when circumstances change, God remains constant. His promises are trustworthy, and He will never abandon those who seek Him. (Lamentations 3:22-23)</li>
-                    <li><strong>God is Holy & Just:</strong> He is completely pure and righteous. Because He is just, He must judge sin, but because He is loving, He provided a substitute in Jesus Christ.</li>
-                </ul>
-            </section>
-
-            <section class="content-card salvation-section">
-                <h2>How to Accept Jesus Christ as Your Savior</h2>
-                <p>God loves you deeply and desires a close, personal relationship with you. Because of human imperfection, we are separated from God, but His immense love bridged that gap through His Son, Jesus Christ. Here are the simple steps to receiving His free gift of eternal life:</p>
-                <ul>
-                   <li><strong>Acknowledge your need:</strong> Recognize that we all fall short and need God's forgiveness (Romans 3:23).</li>
-                   <li><strong>Believe in Jesus:</strong> Understand that Jesus died on the cross for your sins and rose triumphantly from the dead (John 3:16).</li>
-                   <li><strong>Confess and Turn:</strong> Turn away from past burdens and invite Jesus to lead your life as Lord and Savior (Romans 10:9).</li>
-                </ul>
-                <p>If you are ready to place your trust in Him, you can make this commitment right now with a sincere heart:</p>
+        <article id="content-en" class="lang-content active">
+            
+            <!-- MAIN FOCUS: THE SALVATION PRAYER -->
+            <section class="content-card salvation-primary">
+                <h2>Accept Jesus Christ & Receive Eternal Life</h2>
+                <p>Jesus said: <em>"Most assuredly, I say to you, unless one is born again, he cannot see the kingdom of God."</em> (John 3:3)</p>
+                <p>Becoming born again means receiving a new, spiritual life through Jesus Christ. Your past is forgiven, your sins are washed away, and you become a child of God. If you want to accept Jesus as your personal Lord and Savior today, read and pray this simple prayer from your heart:</p>
+                
                 <div class="prayer-box">
-                    "Dear God, I know that I am a sinner, and I ask for your forgiveness. I believe that Jesus Christ died for my sins, was raised from the dead, and is alive today. I invite Jesus to come into my heart and take control of my life. Thank you for your grace, your gift of eternal salvation, and your unending joy. In Jesus' name, Amen."
+                    <strong>The Salvation Prayer:</strong><br><br>
+                    "Lord Jesus Christ, I acknowledge that I am a sinner in need of Your grace. I believe with all my heart that You are the Son of God, that You died on the cross for my sins, and that You rose from the dead on the third day to give me eternal life.<br><br>
+                    Right now, I repent of my sins and open my heart to You. I ask You to forgive me, cleanse me, and come into my life. I confess Jesus Christ as my personal Lord and Savior. Thank You for saving me and making me born again today. Amen."
                 </div>
-                <p>If you prayed that prayer sincerely, the Bible says heaven is rejoicing over you! Welcome to the family of God.</p>
+
+                <p>If you prayed that prayer sincerely, God's Word promises that you are saved! (Romans 10:9-10). You are now a brand-new creation in Christ.</p>
             </section>
 
+            <!-- CRISIS, HEALING & STRENGTH SECTION -->
+            <section class="content-card crisis-card">
+                <h2>God Is With You in Your Darkest Hour</h2>
+                <p>If you reached this page while suffering through <strong>suicidal thoughts, medical emergencies, marital heartbreak, or severe personal problems</strong>, please know that God sees your hurt and is here to give you strength and answered prayer.</p>
+                
+                <div class="verse-box">
+                    "The Lord is close to the brokenhearted and saves those who are crushed in spirit." <br><strong>— Psalm 34:18</strong>
+                </div>
+
+                <h3>Prayer for Help & Immediate Strength</h3>
+                <div class="prayer-box" style="border-color: var(--accent-rose); border-style: solid;">
+                    "Heavenly Father, I bring my burden, pain, and struggles to You today. Strengthen my heart, bring peace to my mind, heal my body and relationships, and show me the hope I have in Jesus. I place my entire life into Your loving hands. In Jesus' name, Amen."
+                </div>
+            </section>
+
+            <!-- STEPS TO GROW IN FAITH -->
             <section class="content-card">
-                <h2>Growing in Your Faith</h2>
-                <p>Accepting Jesus is just the beginning of a beautiful journey. Here is how you can continue to grow in your walk with God:</p>
+                <h2>Steps After Becoming Born Again</h2>
+                <p>Welcome to God's family! Here is how you can build a strong daily walk with Jesus:</p>
                 <ul>
-                    <li><strong>Read the Bible:</strong> The Bible is God's living Word. Start by reading the Book of John in the New Testament to learn more about the life and teachings of Jesus.</li>
-                    <li><strong>Talk to God through Prayer:</strong> Prayer is simply having a conversation with God. You can talk to Him about your worries, your thanks, and your daily life at any time.</li>
-                    <li><strong>Find Community:</strong> Look for a local, Bible-believing church where you can worship, learn, and grow alongside other believers.</li>
+                    <li><strong>Read the Gospel of John:</strong> Start reading the New Testament in the Bible to understand Jesus' love and teachings.</li>
+                    <li><strong>Talk to God Daily:</strong> Pray regularly. Speak to God honestly about your thoughts, needs, and gratitude.</li>
+                    <li><strong>Find a Bible-Believing Church:</strong> Connect with local Christian believers who can support you and help you grow.</li>
                 </ul>
             </section>
 
-            <!-- Social Media Share Card -->
+            <!-- SHARE CARD -->
             <section class="content-card share-card">
-                <h2>Spread the Good News</h2>
-                <p>Help amplify God's message of love, hope, and salvation. Share this page instantly with your friends, family, and followers on social media:</p>
+                <h2>Share the Gift of Salvation</h2>
+                <p>Help others find hope, peace, and eternal life by sharing this website with your loved ones and social networks:</p>
                 <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" class="share-btn btn-facebook">📘 Facebook</a>
-                    <a href="https://twitter.com/intent/tweet?text=Discover%20true%20hope,%20joy,%20and%20salvation%20in%20Jesus%20Christ%20at&url=https://www.joyisgod.com" target="_blank" class="share-btn btn-twitter">✖ X (Twitter)</a>
-                    <a href="https://api.whatsapp.com/send?text=Discover%20hope%20and%20salvation%20at%20https://www.joyisgod.com" target="_blank" class="share-btn btn-whatsapp">💚 WhatsApp</a>
-                    <a href="https://t.me/share/url?url=https://www.joyisgod.com&text=Find%20peace%20and%20eternal%20joy%20in%20Jesus%20Christ" target="_blank" class="share-btn btn-telegram">✈ Telegram</a>
-                    <a href="https://www.reddit.com/submit?url=https://www.joyisgod.com&title=Joy%20Is%20God%20-%20Finding%20Hope%20and%20Salvation" target="_blank" class="share-btn btn-reddit">🔴 Reddit</a>
-                    <a href="https://pinterest.com/pin/create/button/?url=https://www.joyisgod.com&description=Find%20eternal%20hope%20and%20salvation%20in%20Jesus%20Christ" target="_blank" class="share-btn btn-pinterest">📌 Pinterest</a>
-                    <a href="mailto:?subject=A%20Message%20of%20Hope%20and%20Joy&body=I%20thought%20you%20might%20be%20encouraged%20by%20this%20website:%20https://www.joyisgod.com" class="share-btn btn-email">✉ Email</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-facebook">📘 Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=Accept%20Jesus%20Christ%20and%20be%20born%20again%20today%20at&url=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-twitter">✖ X (Twitter)</a>
+                    <a href="https://api.whatsapp.com/send?text=Receive%20salvation%20and%20new%20life%20in%20Jesus%20Christ:%20https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                    <a href="https://t.me/share/url?url=https://www.joyisgod.com&text=Find%20peace,%20salvation%20and%20hope%20in%20Jesus%20Christ" target="_blank" rel="noopener noreferrer" class="share-btn btn-telegram">✈ Telegram</a>
+                    <a href="https://www.reddit.com/submit?url=https://www.joyisgod.com&title=Accept%20Jesus%20Christ%20%26%20Be%20Born%20Again" target="_blank" rel="noopener noreferrer" class="share-btn btn-reddit">🔴 Reddit</a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://www.joyisgod.com&description=Find%20eternal%20hope%20and%20salvation%20in%20Jesus%20Christ" target="_blank" rel="noopener noreferrer" class="share-btn btn-pinterest">📌 Pinterest</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-linkedin">💼 LinkedIn</a>
                 </div>
             </section>
-        </div>
+
+        </article>
 
         <!-- ================= SPANISH (ESPAÑOL) ================= -->
-        <div id="content-es" class="lang-content">
-            <section class="content-card">
-                <h2>Bienvenido a Joy Is God</h2>
-                <p>El verdadero gozo no es un sentimiento temporal ligado a circunstancias cambiantes; es un regalo firme e inquebrantable arraigado en el carácter de Dios y realizado a través de una relación personal con Jesucristo.</p>
-                <div class="verse-box">
-                    "Y el Dios de esperanza os llene de todo gozo y paz en el creer..." <br><strong>— Romanos 15:13</strong>
-                </div>
-            </section>
-
-            <section class="content-card">
-                <h2>Promesas de Esperanza y Paz</h2>
-                <div class="verse-box">
-                    "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo." <br><strong>— Juan 14:27</strong>
-                </div>
-                <div class="verse-box">
-                    "No temas, porque yo estoy contigo; no desmayes, porque yo soy tu Dios que te esfuerzo..." <br><strong>— Isaías 41:10</strong>
-                </div>
-            </section>
-
-            <section class="content-card theology-section">
-                <h2>¿Quién es Jesucristo?</h2>
-                <p>Jesús es la figura central de la historia humana y el fundamento de la fe cristiana. La Biblia lo revela como el Hijo de Dios, totalmente divino y totalmente humano.</p>
-                <div class="grid-layout">
-                    <div>
-                        <h3>Él es el Salvador</h3>
-                        <p>Jesús vino con una misión: buscar y salvar a los perdidos. Él tomó voluntariamente el castigo por nuestros pecados en la cruz.</p>
-                    </div>
-                    <div>
-                        <h3>Él Venció a la Muerte</h3>
-                        <p>Tres días después de su crucifixión, Jesús resucitó de entre los muertos, demostrando su poder sobre el pecado y ofreciendo vida eterna a todos los que creen en Él.</p>
-                    </div>
-                </div>
-                <div class="verse-box">
-                    "Jesús le dijo: Yo soy el camino, y la verdad, y la vida; nadie viene al Padre, sino por mí." <br><strong>— Juan 14:6</strong>
-                </div>
-            </section>
-
-            <section class="content-card">
-                <h2>El Carácter de Dios</h2>
-                <ul>
-                    <li><strong>Dios es Amor:</strong> Su amor por ti es incondicional y eterno. (1 Juan 4:8)</li>
-                    <li><strong>Dios es Fiel:</strong> Sus promesas son confiables y nunca abandonará a quienes lo buscan. (Lamentaciones 3:22-23)</li>
-                    <li><strong>Dios es Santo y Justo:</strong> Él es completamente puro. Porque es justo, debe juzgar el pecado, pero porque es amoroso, proveyó un sustituto en Jesucristo.</li>
-                </ul>
-            </section>
-
-            <section class="content-card salvation-section">
-                <h2>Cómo Aceptar a Jesucristo</h2>
-                <p>Debido a la imperfección humana, estamos separados de Dios, pero Su inmenso amor cerró esa brecha a través de Su Hijo. Aquí están los pasos para recibir la vida eterna:</p>
-                <ul>
-                   <li><strong>Reconoce tu necesidad:</strong> Reconoce que necesitamos el perdón de Dios (Romanos 3:23).</li>
-                   <li><strong>Cree en Jesús:</strong> Comprende que Jesús murió en la cruz por tus pecados y resucitó (Juan 3:16).</li>
-                   <li><strong>Confiesa y vuélvete:</strong> Invita a Jesús a guiar tu vida como Señor y Salvador (Romanos 10:9).</li>
-                </ul>
+        <article id="content-es" class="lang-content">
+            <section class="content-card salvation-primary">
+                <h2>Acepta a Jesucristo y Nace de Nuevo</h2>
+                <p>Jesús dijo: <em>"De cierto, de cierto te digo, que el que no naciere de nuevo, no puede ver el reino de Dios."</em> (Juan 3:3)</p>
+                <p>Si deseas aceptar a Jesús como tu Señor y Salvador personal hoy mismo, lee y ora esta sencilla oración con todo tu corazón:</p>
+                
                 <div class="prayer-box">
-                    "Dios querido, sé que soy un pecador, y te pido perdón. Creo que Jesucristo murió por mis pecados y resucitó. Invito a Jesús a entrar en mi corazón y tomar el control de mi vida. Amén."
+                    <strong>La Oración de Salvación:</strong><br><br>
+                    "Señor Jesucristo, reconozco que soy un pecador necesitado de Tu gracia. Creo con todo mi corazón que Tú eres el Hijo de Dios, que moriste en la cruz por mis pecados y que resucitaste al tercer día para darme vida eterna.<br><br>
+                    Hoy me arrepiento de mis pecados y te abro mi corazón. Te pido que me perdones, me limpies y entres en mi vida. Confieso a Jesucristo como mi Señor y Salvador personal. Gracias por salvarme y hacerme nacer de nuevo hoy. Amén."
                 </div>
             </section>
-            
-            <section class="content-card">
-                <h2>Creciendo en tu Fe</h2>
-                <ul>
-                    <li><strong>Lee la Biblia:</strong> Comienza con el Evangelio de Juan para aprender más sobre Jesús.</li>
-                    <li><strong>Habla con Dios:</strong> La oración es simplemente tener una conversación con Él sobre tus preocupaciones y agradecimientos.</li>
-                    <li><strong>Encuentra Comunidad:</strong> Busca una iglesia local donde puedas adorar y crecer junto a otros creyentes.</li>
-                </ul>
+
+            <section class="content-card crisis-card">
+                <h2>Dios Está Contigo en Tu Momento Más Difícil</h2>
+                <p>Si estás atravesando angustia, pensamientos de desesperación, emergencias médicas o problemas familiares, Jesucristo conoce tu sufrimiento y desea darte paz y fortaleza.</p>
+                <div class="verse-box">
+                    "Cerca está el Señor de los quebrantados de corazón, y salva a los contritos de espíritu." <br><strong>— Salmo 34:18</strong>
+                </div>
             </section>
 
             <section class="content-card share-card">
-                <h2>Comparte las Buenas Nuevas</h2>
+                <h2>Comparte el Regalo de la Salvación</h2>
                 <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" class="share-btn btn-facebook">📘 Facebook</a>
-                    <a href="https://twitter.com/intent/tweet?text=Descubre%20esperanza%20y%20salvaci%C3%B3n%20en%20Jesucristo%20en&url=https://www.joyisgod.com" target="_blank" class="share-btn btn-twitter">✖ X (Twitter)</a>
-                    <a href="https://api.whatsapp.com/send?text=Encuentra%20esperanza%20y%20salvaci%C3%B3n%20en%20https://www.joyisgod.com" target="_blank" class="share-btn btn-whatsapp">💚 WhatsApp</a>
-                    <a href="https://t.me/share/url?url=https://www.joyisgod.com" target="_blank" class="share-btn btn-telegram">✈ Telegram</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-facebook">📘 Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=Acepta%20a%20Jesucristo%20y%20nace%20de%20nuevo%20hoy%20en&url=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-twitter">✖ X (Twitter)</a>
+                    <a href="https://api.whatsapp.com/send?text=Recibe%20salvaci%C3%B3n%20y%20nueva%20vida%20en%20Jesucristo:%20https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                    <a href="https://t.me/share/url?url=https://www.joyisgod.com&text=Encuentra%20paz%20y%20salvaci%C3%B3n%20en%20Jesucristo" target="_blank" rel="noopener noreferrer" class="share-btn btn-telegram">✈ Telegram</a>
+                    <a href="https://www.reddit.com/submit?url=https://www.joyisgod.com&title=Acepta%20a%20Jesucristo" target="_blank" rel="noopener noreferrer" class="share-btn btn-reddit">🔴 Reddit</a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://www.joyisgod.com&description=Encuentra%20esperanza%20en%20Jesucristo" target="_blank" rel="noopener noreferrer" class="share-btn btn-pinterest">📌 Pinterest</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-linkedin">💼 LinkedIn</a>
                 </div>
             </section>
-        </div>
+        </article>
 
         <!-- ================= FRENCH (FRANÇAIS) ================= -->
-        <div id="content-fr" class="lang-content">
-            <section class="content-card">
-                <h2>Bienvenue sur Joy Is God</h2>
-                <p>La vraie joie n'est pas un sentiment temporaire lié à des circonstances changeantes ; c'est un don inébranlable ancré dans le caractère de Dieu.</p>
-                <div class="verse-box">
-                    "Que le Dieu de l'espérance vous remplisse de toute joie et de toute paix..." <br><strong>— Romains 15:13</strong>
-                </div>
-            </section>
-
-            <section class="content-card">
-                <h2>Promesses d'Espoir et de Paix</h2>
-                <div class="verse-box">
-                    "Je vous laisse la paix, je vous donne ma paix. Je ne vous donne pas comme le monde donne." <br><strong>— Jean 14:27</strong>
-                </div>
-            </section>
-
-            <section class="content-card theology-section">
-                <h2>Qui est Jésus-Christ ?</h2>
-                <p>La Bible le révèle comme le Fils de Dieu, pleinement divin et pleinement humain, venu pour sauver l'humanité.</p>
-                <div class="grid-layout">
-                    <div>
-                        <h3>Il est le Sauveur</h3>
-                        <p>Jésus a volontairement pris la punition de nos péchés sur la croix, nous offrant le pardon.</p>
-                    </div>
-                    <div>
-                        <h3>Il a vaincu la mort</h3>
-                        <p>Trois jours après sa crucifixion, Jésus est ressuscité des morts, prouvant sa puissance sur le péché et la mort.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="content-card">
-                <h2>Le Caractère de Dieu</h2>
-                <ul>
-                    <li><strong>Dieu est Amour :</strong> Son amour pour vous est inconditionnel et éternel.</li>
-                    <li><strong>Dieu est Fidèle :</strong> Ses promesses sont dignes de confiance.</li>
-                    <li><strong>Dieu est Saint et Juste :</strong> Il est complètement pur et a fourni un substitut en Jésus-Christ.</li>
-                </ul>
-            </section>
-
-            <section class="content-card salvation-section">
-                <h2>Accepter Jésus-Christ</h2>
-                <ul>
-                   <li><strong>Reconnaissez votre besoin :</strong> Nous avons tous besoin du pardon de Dieu.</li>
-                   <li><strong>Croyez en Jésus :</strong> Comprenez que Jésus est mort sur la croix pour vos péchés.</li>
-                   <li><strong>Confessez et tournez-vous :</strong> Invitez Jésus à diriger votre vie.</li>
-                </ul>
+        <article id="content-fr" class="lang-content">
+            <section class="content-card salvation-primary">
+                <h2>Acceptez Jésus-Christ et Naissez de Nouveau</h2>
+                <p>Jésus a dit : <em>« En vérité, en vérité, je te le dis, si un homme ne naît de nouveau, il ne peut voir le royaume de Dieu. »</em> (Jean 3:3)</p>
+                <p>Priez cette prière avec sincérité pour recevoir Jésus dans votre cœur aujourd'hui :</p>
+                
                 <div class="prayer-box">
-                    "Dieu bien-aimé, je sais que je suis un pécheur. Je crois que Jésus est mort pour mes péchés et qu'il est ressuscité. J'invite Jésus à entrer dans mon cœur. Amen."
+                    <strong>La Prière du Salut :</strong><br><br>
+                    « Seigneur Jésus-Christ, je reconnais que je suis un pécheur. Je crois de tout mon cœur que Tu es le Fils de Dieu, que Tu es mort sur la croix pour mes péchés et que Tu es ressuscité pour me donner la vie éternelle.<br><br>
+                    Je me repens de mes péchés et je T'ouvre mon cœur. Pardonne-moi, purifie-moi et viens habiter en moi. Je confesse Jésus-Christ comme mon Seigneur et Sauveur personnel. Merci de me sauver aujourd'hui. Amen. »
                 </div>
             </section>
-            
+
+            <section class="content-card crisis-card">
+                <h2>Dieu est là dans vos moments sombres</h2>
+                <p>Si vous traversez une crise, des problèmes de santé ou des difficultés familiales, sachez que Jésus vous aime et désire vous apporter la guérison et la paix.</p>
+            </section>
+
             <section class="content-card share-card">
-                <h2>Partagez la Bonne Nouvelle</h2>
+                <h2>Partagez le Don du Salut</h2>
                 <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" class="share-btn btn-facebook">📘 Facebook</a>
-                    <a href="https://twitter.com/intent/tweet?text=D%C3%A9couvrez%20l'espoir%20et%20le%20salut%20sur&url=https://www.joyisgod.com" target="_blank" class="share-btn btn-twitter">✖ X (Twitter)</a>
-                    <a href="https://api.whatsapp.com/send?text=Trouvez%20l'espoir%20sur%20https://www.joyisgod.com" target="_blank" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-facebook">📘 Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=Acceptez%20J%C3%A9sus-Christ%20aujourd'hui%20sur&url=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-twitter">✖ X (Twitter)</a>
+                    <a href="https://api.whatsapp.com/send?text=Trouvez%20le%20salut%20et%20l'espoir%20sur%20https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                    <a href="https://t.me/share/url?url=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-telegram">✈ Telegram</a>
                 </div>
             </section>
-        </div>
+        </article>
 
         <!-- ================= CHINESE (中文) ================= -->
-        <div id="content-zh" class="lang-content">
-            <section class="content-card">
-                <h2>欢迎来到 Joy Is God</h2>
-                <p>真正的喜乐不是一种随环境变化的暂时情绪，而是一份扎根于神的属性、通过与耶稣基督建立个人关系而实现的坚定恩赐。</p>
-                <div class="verse-box">
-                    "但愿使人有盼望的神，因信将诸般的喜乐、平安充满你们的心..." <br><strong>— 罗马书 15:13</strong>
-                </div>
-            </section>
-
-            <section class="content-card">
-                <h2>盼望与平安的应许</h2>
-                <div class="verse-box">
-                    "我留下平安给你们；我将我的平安赐给你们。我所赐的，不像世人所赐的。" <br><strong>— 约翰福音 14:27</strong>
-                </div>
-            </section>
-
-            <section class="content-card theology-section">
-                <h2>耶稣基督是谁？</h2>
-                <p>耶稣是人类历史的核心人物，也是基督教信仰的根基。圣经启示祂是神的儿子，具有完全的神性和完全的人性。</p>
-                <div class="grid-layout">
-                    <div>
-                        <h3>祂是救主</h3>
-                        <p>耶稣来到世上是为了寻找和拯救失丧的人。祂甘愿在十字架上为我们的罪担当刑罚，赐予我们通向神的道路。</p>
-                    </div>
-                    <div>
-                        <h3>祂战胜了死亡</h3>
-                        <p>耶稣被钉十字架三天后从死里复活，证明了祂战胜罪恶和死亡的大能，并向所有信祂的人赐予永生。</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="content-card">
-                <h2>神的属性</h2>
-                <ul>
-                    <li><strong>神是爱：</strong> 祂对你的爱是无条件且永恒的。</li>
-                    <li><strong>神是信实的：</strong> 即使环境改变，神依然不变，祂绝不离弃寻求祂的人。</li>
-                    <li><strong>神是圣洁与公义的：</strong> 祂绝对纯洁。因着公义，祂必须审判罪；因着慈爱，祂借着耶稣基督为你预备了救赎。</li>
-                </ul>
-            </section>
-
-            <section class="content-card salvation-section">
-                <h2>如何接受耶稣基督</h2>
-                <ul>
-                   <li><strong>承认你的需要：</strong> 认识到我们都需要神的赦免。</li>
-                   <li><strong>相信耶稣：</strong> 明白耶稣为你的罪死在十字架上并复活。</li>
-                   <li><strong>认罪并回转：</strong> 邀请耶稣作为你的生命之主。</li>
-                </ul>
+        <article id="content-zh" class="lang-content">
+            <section class="content-card salvation-primary">
+                <h2>接受耶稣基督，获得重生</h2>
+                <p>耶稣说：<em>“我实实在在地告诉你，人若不重生，就不能见神的国。”</em>（约翰福音 3:3）</p>
+                <p>如果你愿意在今天接受耶稣作为你个人的救主，请由心发出这句决志祷告：</p>
+                
                 <div class="prayer-box">
-                    "亲爱的神，我知道我是一个罪人，我向你寻求宽恕。我相信耶稣基督为我的罪死在十字架上并复活。我邀请耶稣进入我的心。奉耶稣的名祷告，阿们。"
+                    <strong>决志祷告词：</strong><br><br>
+                    “主耶稣基督，我承认我是个需要祢恩典的罪人。我真心相信祢是神的儿子，为我的罪死在十字架上，并在第三天复活，赐给我永生。<br><br>
+                    我现在向祢悔改，向祢敞开心扉。求祢赦免我，洗净我，进入我的生命中。我承认耶稣基督是我个人的主和救主。感谢祢拯救我，使我今天获得重生。阿们。”
                 </div>
             </section>
-            
+
+            <section class="content-card crisis-card">
+                <h2>在艰难时刻，神与你同在</h2>
+                <p>无论你正在面临绝望、健康危机或家庭困境，请记住神爱你，并愿意赐给你真正的平安与力量。</p>
+            </section>
+
             <section class="content-card share-card">
-                <h2>传播福音</h2>
+                <h2>分享救恩的礼物</h2>
                 <div class="share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" class="share-btn btn-facebook">📘 Facebook</a>
-                    <a href="https://twitter.com/intent/tweet?text=%E5%9C%A8%20Joy%20Is%20God%20%E6%89%BE%E5%88%B0%E6%B0%B8%E6%81%92%E7%9A%84%E7%A5%9D%E7%A6%8F%EF%BC%A&url=https://www.joyisgod.com" target="_blank" class="share-btn btn-twitter">✖ X (Twitter)</a>
-                    <a href="https://api.whatsapp.com/send?text=%E5%88%86%E4%BA%AB%E7%A5%9D%E7%A6%8F%EF%BC%9Ahttps://www.joyisgod.com" target="_blank" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-facebook">📘 Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=%E5%9C%A8%20Joy%20Is%20God%20%E6%8E%A5%E5%8F%97%E8%80%B6%E2%80%9D%20%E8%8E%B7%E5%BE%97%E9%87%8D%E7%94%9F&url=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-twitter">✖ X (Twitter)</a>
+                    <a href="https://api.whatsapp.com/send?text=%E5%88%86%E4%BA%AB%E7%A5%9D%E7%A6%8F%EF%BC%9Ahttps://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-whatsapp">💚 WhatsApp</a>
+                    <a href="https://t.me/share/url?url=https://www.joyisgod.com" target="_blank" rel="noopener noreferrer" class="share-btn btn-telegram">✈ Telegram</a>
                 </div>
             </section>
-        </div>
+        </article>
     </main>
 
     <footer>
-        <p>&copy; 2026 joyisgod.com. All rights reserved. Sharing the light of Christ with the world.</p>
+        <p>&copy; 2026 joyisgod.com. All rights reserved. Sharing the Gospel and the message of salvation through Jesus Christ.</p>
     </footer>
 
-    <!-- JavaScript for Language Switching & Multilingual Verse of the Day -->
+    <!-- JavaScript for Language Switching & Verse of the Day -->
     <script>
-        // 365-Day Multilingual Verse Database
         const dailyVerses = [
             {
-                en: { heading: "Verse of the Day", text: "The Lord is my light and my salvation; whom shall I fear?", ref: "Psalm 27:1" },
-                es: { heading: "Versículo del Día", text: "El Señor es mi luz y mi salvación; ¿de quién temeré?", ref: "Salmo 27:1" },
-                fr: { heading: "Verset du Jour", text: "L'Éternel est ma lumière et mon salut: de qui aurais-je crainte?", ref: "Psaume 27:1" },
-                zh: { heading: "今日经文", text: "耶和华是我的亮光，是我的拯救，我还怕谁呢？", ref: "诗篇 27:1" }
+                en: { heading: "Verse of the Day", text: "For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life.", ref: "John 3:16" },
+                es: { heading: "Versículo del Día", text: "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.", ref: "Juan 3:16" },
+                fr: { heading: "Verset du Jour", text: "Car Dieu a tant aimé le monde qu'il a donné son Fils unique, afin que quiconque croit en lui ne périsse point, mais qu'il ait la vie éternelle.", ref: "Jean 3:16" },
+                zh: { heading: "今日经文", text: "神爱世人，甚至将祂的独生子赐给他们，叫一切信祂的，不至灭亡，反得永生。", ref: "约翰福音 3:16" }
             },
             {
-                en: { heading: "Verse of the Day", text: "Trust in the Lord with all your heart and lean not on your own understanding.", ref: "Proverbs 3:5" },
-                es: { heading: "Versículo del Día", text: "Confía en el Señor de todo corazón, y no te apoyes en tu propia prudencia.", ref: "Proverbios 3:5" },
-                fr: { heading: "Verset du Jour", text: "Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ton intelligence.", ref: "Proverbes 3:5" },
-                zh: { heading: "今日经文", text: "你要专心仰赖耶和华，不可倚靠自己的聪明。", ref: "箴言 3:5" }
-            },
-            {
-                en: { heading: "Verse of the Day", text: "I can do all things through Christ who strengthens me.", ref: "Philippians 4:13" },
-                es: { heading: "Versículo del Día", text: "Todo lo puedo en Cristo que me fortalece.", ref: "Filipenses 4:13" },
-                fr: { heading: "Verset du Jour", text: "Je puis tout par celui qui me fortifie.", ref: "Philippiens 4:13" },
-                zh: { heading: "今日经文", text: "我靠着那加给我力量的，凡事都能做。", ref: "腓立比书 4:13" }
-            },
-            {
-                en: { heading: "Verse of the Day", text: "For I know the plans I have for you, declares the Lord.", ref: "Jeremiah 29:11" },
-                es: { heading: "Versículo del Día", text: "Porque yo sé los pensamientos que tengo acerca de vosotros, dice el Señor.", ref: "Jeremías 29:11" },
-                fr: { heading: "Verset du Jour", text: "Car je connais les projets que j'ai formés sur vous, dit l'Éternel.", ref: "Jérémie 29:11" },
-                zh: { heading: "今日经文", text: "耶和华说：我知道我向你们所怀的意念是赐平安的意念，不是降灾祸的意念。", ref: "耶利米书 29:11" }
-            },
-            {
-                en: { heading: "Verse of the Day", text: "The Lord is my shepherd; I shall not want.", ref: "Psalm 23:1" },
-                es: { heading: "Versículo del Día", text: "El Señor es mi pastor; nada me faltará.", ref: "Salmo 23:1" },
-                fr: { heading: "Verset du Jour", text: "L'Éternel est mon berger: je ne manquerai de rien.", ref: "Psaume 23:1" },
-                zh: { heading: "今日经文", text: "耶和华是我的牧者，我必不至缺乏。", ref: "诗篇 23:1" }
+                en: { heading: "Verse of the Day", text: "If you confess with your mouth the Lord Jesus and believe in your heart that God has raised Him from the dead, you will be saved.", ref: "Romans 10:9" },
+                es: { heading: "Versículo del Día", text: "Que si confesares con tu boca que Jesús es el Señor, y creyeres en tu corazón que Dios le levantó de los muertos, serás salvo.", ref: "Romanos 10:9" },
+                fr: { heading: "Verset du Jour", text: "Si tu confesses de ta bouche le Seigneur Jésus, et si tu crois dans ton cœur que Dieu l'a ressuscité des morts, tu seras sauvé.", ref: "Romains 10:9" },
+                zh: { heading: "今日经文", text: "你若口里承认耶稣为主，心里相信神叫祂从死里复活，就必得救。", ref: "罗马书 10:9" }
             }
         ];
-
-        let currentActiveLang = 'en';
 
         function getDayOfYear() {
             const now = new Date();
@@ -785,7 +578,6 @@
         }
 
         function changeLanguage(lang) {
-            currentActiveLang = lang;
             const contents = document.querySelectorAll('.lang-content');
             contents.forEach(el => el.classList.remove('active'));
 
@@ -810,6 +602,5 @@
             changeLanguage(savedLang);
         });
     </script>
-
 </body>
 </html>
