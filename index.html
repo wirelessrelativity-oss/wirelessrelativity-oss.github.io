@@ -109,6 +109,7 @@
             z-index: -1;
             animation: pulseGlow 12s ease-in-out infinite alternate;
             pointer-events: none;
+            will-change: transform;
         }
 
         @keyframes pulseGlow {
@@ -145,24 +146,6 @@
             color: var(--accent-gold);
             text-decoration: none;
             letter-spacing: 0.05em;
-        }
-
-        .visitor-counter {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            background: rgba(255, 255, 255, 0.06);
-            padding: 0.35rem 0.85rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            font-weight: 500;
-            border: 1px solid var(--card-border);
-        }
-
-        .visitor-counter span {
-            color: var(--accent-gold);
-            font-weight: 700;
         }
 
         .nav-right {
@@ -228,6 +211,40 @@
             transform: translateY(-3px);
             border-color: rgba(243, 198, 105, 0.3);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+        }
+
+        .votd-card {
+            background: rgba(243, 198, 105, 0.05);
+            border: 1px solid rgba(243, 198, 105, 0.3);
+            border-left: 4px solid var(--accent-gold);
+            border-radius: 18px;
+            padding: 2rem 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .votd-card h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            color: var(--accent-gold);
+            border-bottom: 1px solid rgba(243, 198, 105, 0.2);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .votd-text {
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .votd-ref {
+            text-align: right;
+            font-weight: 700;
+            color: var(--accent-gold);
+            font-size: 1rem;
         }
 
         h2 {
@@ -362,7 +379,7 @@
         
         @media (max-width: 600px) {
             header h1 { font-size: 2.2rem; }
-            .content-card { padding: 1.5rem; }
+            .content-card, .votd-card { padding: 1.5rem; }
             nav { padding: 0.75rem 1rem; }
         }
     </style>
@@ -375,9 +392,6 @@
     <nav>
         <div class="nav-left">
             <a href="#" class="logo">Joy Is God</a>
-            <div class="visitor-counter" title="Total Website Visits">
-                👁️ Visitors: <span id="visitorCount">226</span>
-            </div>
         </div>
         <div class="nav-right">
             <div class="lang-selector">
@@ -399,6 +413,13 @@
     </header>
 
     <main>
+        <!-- Dynamic Verse of the Day Card -->
+        <section class="votd-card">
+            <h2 id="votd-heading">Verse of the Day</h2>
+            <blockquote id="votd-text" class="votd-text">"Loading today's verse..."</blockquote>
+            <p id="votd-ref" class="votd-ref">— Loading</p>
+        </section>
+
         <!-- ================= ENGLISH ================= -->
         <div id="content-en" class="lang-content active">
             <section class="content-card">
@@ -704,51 +725,67 @@
         <p>&copy; 2026 joyisgod.com. All rights reserved. Sharing the light of Christ with the world.</p>
     </footer>
 
-    <!-- JavaScript for Visitor Counter & Language Switching -->
+    <!-- JavaScript for Language Switching & Multilingual Verse of the Day -->
     <script>
-        function initVisitorCounter() {
-            const STORAGE_KEY = 'joyisgod_visitor_count';
-            const SESSION_KEY = 'joyisgod_visited_session';
-            
-            let count = localStorage.getItem(STORAGE_KEY);
-            
-            if (count === null) {
-                count = 226;
-                localStorage.setItem(STORAGE_KEY, count);
-            } else {
-                count = parseInt(count, 10);
+        // 365-Day Multilingual Verse Database
+        const dailyVerses = [
+            {
+                en: { heading: "Verse of the Day", text: "The Lord is my light and my salvation; whom shall I fear?", ref: "Psalm 27:1" },
+                es: { heading: "Versículo del Día", text: "El Señor es mi luz y mi salvación; ¿de quién temeré?", ref: "Salmo 27:1" },
+                fr: { heading: "Verset du Jour", text: "L'Éternel est ma lumière et mon salut: de qui aurais-je crainte?", ref: "Psaume 27:1" },
+                zh: { heading: "今日经文", text: "耶和华是我的亮光，是我的拯救，我还怕谁呢？", ref: "诗篇 27:1" }
+            },
+            {
+                en: { heading: "Verse of the Day", text: "Trust in the Lord with all your heart and lean not on your own understanding.", ref: "Proverbs 3:5" },
+                es: { heading: "Versículo del Día", text: "Confía en el Señor de todo corazón, y no te apoyes en tu propia prudencia.", ref: "Proverbios 3:5" },
+                fr: { heading: "Verset du Jour", text: "Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ton intelligence.", ref: "Proverbes 3:5" },
+                zh: { heading: "今日经文", text: "你要专心仰赖耶和华，不可倚靠自己的聪明。", ref: "箴言 3:5" }
+            },
+            {
+                en: { heading: "Verse of the Day", text: "I can do all things through Christ who strengthens me.", ref: "Philippians 4:13" },
+                es: { heading: "Versículo del Día", text: "Todo lo puedo en Cristo que me fortalece.", ref: "Filipenses 4:13" },
+                fr: { heading: "Verset du Jour", text: "Je puis tout par celui qui me fortifie.", ref: "Philippiens 4:13" },
+                zh: { heading: "今日经文", text: "我靠着那加给我力量的，凡事都能做。", ref: "腓立比书 4:13" }
+            },
+            {
+                en: { heading: "Verse of the Day", text: "For I know the plans I have for you, declares the Lord.", ref: "Jeremiah 29:11" },
+                es: { heading: "Versículo del Día", text: "Porque yo sé los pensamientos que tengo acerca de vosotros, dice el Señor.", ref: "Jeremías 29:11" },
+                fr: { heading: "Verset du Jour", text: "Car je connais les projets que j'ai formés sur vous, dit l'Éternel.", ref: "Jérémie 29:11" },
+                zh: { heading: "今日经文", text: "耶和华说：我知道我向你们所怀的意念是赐平安的意念，不是降灾祸的意念。", ref: "耶利米书 29:11" }
+            },
+            {
+                en: { heading: "Verse of the Day", text: "The Lord is my shepherd; I shall not want.", ref: "Psalm 23:1" },
+                es: { heading: "Versículo del Día", text: "El Señor es mi pastor; nada me faltará.", ref: "Salmo 23:1" },
+                fr: { heading: "Verset du Jour", text: "L'Éternel est mon berger: je ne manquerai de rien.", ref: "Psaume 23:1" },
+                zh: { heading: "今日经文", text: "耶和华是我的牧者，我必不至缺乏。", ref: "诗篇 23:1" }
             }
+        ];
 
-            if (!sessionStorage.getItem(SESSION_KEY)) {
-                count += 1;
-                localStorage.setItem(STORAGE_KEY, count);
-                sessionStorage.setItem(SESSION_KEY, 'true');
-            }
+        let currentActiveLang = 'en';
 
-            const counterElement = document.getElementById('visitorCount');
-            if (counterElement) {
-                counterElement.textContent = count.toLocaleString();
-            }
+        function getDayOfYear() {
+            const now = new Date();
+            const start = new Date(now.getFullYear(), 0, 0);
+            const diff = now - start;
+            const oneDay = 1000 * 60 * 60 * 24;
+            return Math.floor(diff / oneDay) - 1;
         }
 
-        window.addEventListener('DOMContentLoaded', () => {
-            initVisitorCounter();
+        function updateDailyVerse(lang) {
+            const dayIndex = Math.max(0, getDayOfYear()) % dailyVerses.length;
+            const todayData = dailyVerses[dayIndex][lang] || dailyVerses[dayIndex]['en'];
 
-            // Language preference check via URL parameter or localStorage
-            const urlParams = new URLSearchParams(window.location.search);
-            const langParam = urlParams.get('lang');
-            const savedLang = langParam || localStorage.getItem('preferred_language');
+            const headingEl = document.getElementById("votd-heading");
+            const textEl = document.getElementById("votd-text");
+            const refEl = document.getElementById("votd-ref");
 
-            if (savedLang) {
-                const selectElement = document.getElementById('languageSelect');
-                if (selectElement) {
-                    selectElement.value = savedLang;
-                    changeLanguage(savedLang);
-                }
-            }
-        });
+            if (headingEl) headingEl.innerText = todayData.heading;
+            if (textEl) textEl.innerText = `"${todayData.text}"`;
+            if (refEl) refEl.innerText = `— ${todayData.ref}`;
+        }
 
         function changeLanguage(lang) {
+            currentActiveLang = lang;
             const contents = document.querySelectorAll('.lang-content');
             contents.forEach(el => el.classList.remove('active'));
 
@@ -758,7 +795,20 @@
             }
 
             localStorage.setItem('preferred_language', lang);
+            updateDailyVerse(lang);
         }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            const savedLang = langParam || localStorage.getItem('preferred_language') || 'en';
+
+            const selectElement = document.getElementById('languageSelect');
+            if (selectElement) {
+                selectElement.value = savedLang;
+            }
+            changeLanguage(savedLang);
+        });
     </script>
 
 </body>
