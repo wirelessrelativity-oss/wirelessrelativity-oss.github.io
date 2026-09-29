@@ -1,0 +1,6 @@
+# Allow all search engines to crawl and index all public pages
+User-agent: *
+Allow: /
+
+# Link to your XML Sitemap for Google Search Console and other crawlers
+Sitemap: https://www.joyisgod.com/sitemap.xml
