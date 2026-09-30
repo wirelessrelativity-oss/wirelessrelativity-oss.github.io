@@ -93,7 +93,7 @@
             --accent-gold: #f3c669;
             --accent-glow: rgba(243, 198, 105, 0.25);
             --text-main: #f0eef5;
-            --text-muted: #b5b1c8; /* WCAG AA compliant contrast against dark background */
+            --text-muted: #b5b1c8;
             --card-bg: rgba(255, 255, 255, 0.04);
             --card-border: rgba(255, 255, 255, 0.1);
             --accent-green: #34d399;
@@ -343,6 +343,19 @@
             text-align: center;
         }
 
+        .share-preview-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .share-preview-img:hover {
+            transform: scale(1.02);
+        }
+
         .share-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -479,7 +492,7 @@
                 <!-- Social Sharing Preview Image -->
                 <div style="margin: 1.5rem 0; text-align: center;">
                     <a href="https://www.joyisgod.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="og-image.jpg" alt="Joy Is God - Accept Jesus Christ & Find Peace" style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--card-border); box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="og-image.jpg" alt="Joy Is God - Accept Jesus Christ & Find Peace" class="share-preview-img">
                     </a>
                 </div>
 
@@ -532,7 +545,7 @@
                 <h2>Comparte el Regalo de la Salvación</h2>
                 <div style="margin: 1.5rem 0; text-align: center;">
                     <a href="https://www.joyisgod.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="og-image.jpg" alt="Joy Is God" style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--card-border); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <img src="og-image.jpg" alt="Joy Is God" class="share-preview-img">
                     </a>
                 </div>
                 <div class="share-buttons">
@@ -580,7 +593,7 @@
                 <h2>Partagez le Don du Salut</h2>
                 <div style="margin: 1.5rem 0; text-align: center;">
                     <a href="https://www.joyisgod.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="og-image.jpg" alt="Joy Is God" style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--card-border); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <img src="og-image.jpg" alt="Joy Is God" class="share-preview-img">
                     </a>
                 </div>
                 <div class="share-buttons">
@@ -628,7 +641,7 @@
                 <h2>分享救恩的礼物</h2>
                 <div style="margin: 1.5rem 0; text-align: center;">
                     <a href="https://www.joyisgod.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="og-image.jpg" alt="Joy Is God" style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--card-border); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <img src="og-image.jpg" alt="Joy Is God" class="share-preview-img">
                     </a>
                 </div>
                 <div class="share-buttons">
