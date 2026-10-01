@@ -1,0 +1,27 @@
+yaml
+name: "IndexNow Key and Ping Automation"
+
+# Trigger every time you push changes to your main code branch
+on:
+  push:
+    branches:
+      - main  # Change to "master" if your repository default branch uses master
+
+jobs:
+  indexnow-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Pull down your repository code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. Dynamically create the verification txt file in your root folder
+      - name: Generate IndexNow Verification File
+        run: echo "${{ secrets.INDEXNOW_KEY }}" > ./${{ secrets.INDEXNOW_KEY }}.txt
+
+      # 3. Submit your pages to search engines
+      - name: Ping IndexNow
+        uses: bojieyang/indexnow-action@v3
+        with:
+          sitemap-location: "https://www.joyisgod.com"
+          key: ${{ secrets.INDEXNOW_KEY }}
