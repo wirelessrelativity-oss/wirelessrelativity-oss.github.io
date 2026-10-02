@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <url>
-        <loc>https://www.joyisgod.com/</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.joyisgod.com/?lang=en" />
-        <xhtml:link rel="alternate" hreflang="es" href="https://www.joyisgod.com/?lang=es" />
-        <xhtml:link rel="alternate" hreflang="fr" href="https://www.joyisgod.com/?lang=fr" />
-        <xhtml:link rel="alternate" hreflang="zh" href="https://www.joyisgod.com/?lang=zh" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.joyisgod.com/" />
-    </url>
-    <url>
-        <loc>https://www.joyisgod.com/?lang=en</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.joyisgod.com/?lang=es</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.joyisgod.com/?lang=fr</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.joyisgod.com/?lang=zh</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.joyisgod.com/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
